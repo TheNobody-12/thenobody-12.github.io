@@ -4,6 +4,31 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Machine Learning and Data Science Enthusiast
 --------------------------------------------
 
+> **Portfolio + Lab Notebook**
+> This repo powers my GitHub Pages site at [https://thenobody-12.github.io](https://thenobody-12.github.io).
+> The site is plain HTML/CSS/JS with no build step. The blog loads Markdown files in the browser.
+
+### Adding a blog post
+
+1. Create a new Markdown file in `blog/posts/`, e.g. `blog/posts/2025-07-12-my-post.md`.
+2. Add YAML frontmatter at the top:
+   ```yaml
+   ---
+   title: "My Post Title"
+   slug: "my-post"
+   date: "2025-07-12"
+   tags: ["machine-learning", "python"]
+   excerpt: "A short summary."
+   draft: false
+   ---
+   ```
+3. Append the post metadata to `blog/data/posts.json`.
+4. Preview locally:
+   ```bash
+   python3 -m http.server 8000
+   # open http://localhost:8000
+   ```
+
 I am a Machine learning Enthusiast. I have been developing codes for the last 3 years. I started with C language as my first programming language and wrote Traditional Hello World Program in it. After learning C Language for one semester I started exploring Python Programming. I focused my learning on Python and Machine learning. During my academic year, I also learned Java and Flutter programming Languages. I have done several projects with python and machine learning. I also learned HTML, CSS, and JS to make web apps that help deploy ML models. As a part of the backend frameworks, I used Django and Flask. I am currently applying Machine learning Algorithms to a real-world problem
 
 * 🌍  I'm based in Ahmedabad

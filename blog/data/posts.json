@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello World — Starting the Lab Notebook",
+    "date": "2025-07-10",
+    "tags": ["meta", "machine-learning"],
+    "excerpt": "Why I'm turning my portfolio into a living lab notebook and what you can expect to find here.",
+    "file": "posts/2025-07-10-hello-world.md"
+  }
+]

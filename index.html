@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sarthak Kapaliya – AI & Data Science Portfolio</title>
 
-  <!-- SEO -->
   <meta name="description" content="Portfolio of Sarthak Kapaliya – AI & Data Science professional: ML, NLP, Computer Vision, Knowledge Graphs, Forecasting, and production MLOps." />
   <meta name="keywords" content="Sarthak Kapaliya, AI, Data Science, Machine Learning, NLP, Computer Vision, Knowledge Graph, MLOps, Portfolio, Python, PyTorch, TensorFlow, Prophet, ARIMA, Neo4j" />
   <link rel="canonical" href="https://thenobody-12.github.io/" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Sarthak Kapaliya – AI & Data Science Portfolio" />
   <meta property="og:description" content="Projects in ML, NLP, CV, Knowledge Graphs, Forecasting, and production MLOps. View experience, skills, and publications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thenobody-12.github.io/" />
   <meta property="og:image" content="https://thenobody-12.github.io/Sarthak_pps.png" />
 
-  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,36 +31,33 @@
   }
   </script>
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Top Bar -->
-  <section id="topbar" class="topbar">
-    <div class="container flex between center-y">
-      <div class="contact-info flex center-y gap-12">
-        <i class="bi bi-envelope-fill"></i>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="contact-info">
         <a href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
-        <i class="bi bi-telephone-fill"></i>
         <a href="tel:+15196356898">+1 519-635-6898</a>
       </div>
-      <div class="social-links flex center-y gap-12">
+      <div class="social-links">
         <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
         <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Header -->
-  <header id="header" class="header">
-    <div class="container flex between center-y">
-      <a class="logo" href="#home">Sarthak Kapaliya</a>
-      <nav id="navbar" class="navbar">
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="#home">Sarthak<span>.</span></a>
+      <nav class="navbar" aria-label="Primary">
         <ul class="nav-links">
           <li><a class="nav-link active" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
@@ -71,396 +65,427 @@
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#education">Education</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#certifications">Certs</a></li>
-          <li><a class="nav-link" href="#publications">Publications</a></li>
+          <li><a class="nav-link" href="#publications">Research</a></li>
+          <li><a class="nav-link" href="blog/index.html">Blog</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="bx bx-menu"></i></button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <video class="hero-video" src="home.mp4" autoplay loop muted playsinline></video>
-    <div class="hero-overlay"></div>
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">AI & Data Science Professional</p>
-        <h1>Every day is the opportunity for a better tomorrow.</h1>
-        <p class="subtitle">Feel free to look around.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#about">About Me</a>
-          <a class="btn ghost" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Download Resume</a>
+  <main id="main-content">
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <video class="hero-video" src="home.mp4" autoplay loop muted playsinline></video>
+      <canvas id="hero-canvas" class="hero-canvas"></canvas>
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI & Data Science Professional</p>
+          <h1>Every day is the opportunity for a better tomorrow.</h1>
+          <p class="subtitle">I turn messy data into production ML systems — from forecasting and knowledge graphs to computer vision at the edge.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#about">About Me</a>
+            <a class="btn ghost" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Download Resume</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="https://twitter.com/SarthakKapaliya" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+          </div>
         </div>
-        <div class="hero-socials">
-          <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/TheNobody-12" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://twitter.com/SarthakKapaliya" target="_blank"><i class="bx bxl-twitter"></i></a>
-        </div>
-      </div>
-      <div class="hero-card glass">
-        <div class="avatar-wrap">
-          <img src="Sarthak_pps.png" alt="Sarthak Kapaliya" class="avatar" />
-        </div>
-        <div class="hero-card-body">
-          <h3>Sarthak Kapaliya</h3>
-          <p>AI, Data Science, MLOps, Forecasting, Knowledge Graphs.</p>
-          <div class="stats">
-            <div><span class="label">Experience</span><strong>5+ roles</strong></div>
-            <div><span class="label">Projects</span><strong>6+</strong></div>
-            <div><span class="label">Publications</span><strong>6</strong></div>
+
+        <div class="hero-card reveal">
+          <div class="avatar-wrap">
+            <img src="Sarthak_pps.png" alt="Sarthak Kapaliya" class="avatar" />
+          </div>
+          <div class="hero-card-body">
+            <h3>Sarthak Kapaliya</h3>
+            <p>AI, Data Science, MLOps, Forecasting, Knowledge Graphs.</p>
+            <div class="stats">
+              <div><span class="label">Experience</span><strong>5+ roles</strong></div>
+              <div><span class="label">Projects</span><strong>6+</strong></div>
+              <div><span class="label">Publications</span><strong>6</strong></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>Who I am</h2>
-      </div>
-    </div>
-    <div class="container about-grid card-grid">
-      <div class="card">
-        <p class="lead"><strong>Hi 👋! I'm Sarthak Kapaliya.</strong></p>
-        <p>
-          I am an AI and Data Science professional focused on ML, NLP, computer vision, forecasting, and production-grade MLOps. I enjoy building systems that are explainable, reliable, and measurable. My work bridges the gap between research and real-world deployment.
-        </p>
-        <p>
-          Recently, I’ve shipped production workflows in insurance analytics (variance analysis, forecasting, knowledge graphs), edge AI for real-time vision, and GenAI-driven document intelligence for complex financial data.
-        </p>
-        <div class="about-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn ghost" href="https://drive.google.com/file/d/1ArHPqzd8DRredKZpBbGWiN7aqfDtEJc4/view?usp=sharing" target="_blank">Resume</a>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Who I am</h2>
         </div>
       </div>
-      <div class="card">
-        <div class="pill">Highlights</div>
-        <ul class="checklist">
-          <li>Mortality experience analytics & forecasting (ARIMA/Prophet) with MLflow and Power BI storytelling.</li>
-          <li>Real-time people counting on 200+ edge devices; Jetson Nano + DeepStream; DVC + MLflow for CV models.</li>
-          <li>Knowledge graph (Neo4j/Cypher) for GenAI retrieval, boosting chatbot accuracy by 35%.</li>
-          <li>LLM-enabled document intelligence; confidence routing + human-in-the-loop for noisy tax PDFs.</li>
-          <li>Multimodal AI mock-interview platform with speech-to-text + FER; validated with 40+ users.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <div class="container bento about-grid">
+        <article class="card reveal">
+          <p class="lead"><strong>Hi 👋! I'm Sarthak Kapaliya.</strong></p>
+          <p>I am an AI and Data Science professional focused on ML, NLP, computer vision, forecasting, and production-grade MLOps. I enjoy building systems that are explainable, reliable, and measurable. My work bridges the gap between research and real-world deployment.</p>
+          <p>Recently, I’ve shipped production workflows in insurance analytics (variance analysis, forecasting, knowledge graphs), edge AI for real-time vision, and GenAI-driven document intelligence for complex financial data.</p>
+          <div class="about-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="https://drive.google.com/file/d/1ArHPqzd8DRredKZpBbGWiN7aqfDtEJc4/view?usp=sharing" target="_blank">Resume</a>
+          </div>
+        </article>
 
-  <!-- Work Experience -->
-  <section id="work-experience" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Experience</p>
-        <h2>Work Experience</h2>
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Highlights</h3>
+            <span class="pill">Impact</span>
+          </div>
+          <ul class="checklist">
+            <li>Mortality experience analytics & forecasting (ARIMA/Prophet) with MLflow and Power BI storytelling.</li>
+            <li>Real-time people counting on 200+ edge devices; Jetson Nano + DeepStream; DVC + MLflow for CV models.</li>
+            <li>Knowledge graph (Neo4j/Cypher) for GenAI retrieval, boosting chatbot accuracy by 35%.</li>
+            <li>LLM-enabled document intelligence; confidence routing + human-in-the-loop for noisy tax PDFs.</li>
+            <li>Multimodal AI mock-interview platform with speech-to-text + FER; validated with 40+ users.</li>
+          </ul>
+        </article>
       </div>
-    </div>
-    <div class="container card-grid">
-      <article class="card">
-        <div class="card-top">
-          <h3>Data Science Intern (Group Function AI)</h3>
-          <span class="pill">May 2025 – Dec 2025</span>
-        </div>
-        <p class="muted">Manulife Insurance · Toronto, Canada</p>
-        <ul class="checklist">
-          <li>Automated mortality experience variance/trend analysis with SQL & PySpark; reduced manual workflows by 40% via Power BI + AI narratives.</li>
-          <li>Built ARIMA & Prophet cashflow forecasts, improving MAPE by 15% for proactive financial decisions.</li>
-          <li>Production ML with MLflow for experiment tracking, reproducibility, and CI/CD-aligned deployments.</li>
-          <li>Engineered Neo4j treaty knowledge graph and multi-hop reasoning to support GenAI retrieval; improved chatbot accuracy by 35%.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card-top">
-          <h3>AI Trainee</h3>
-          <span class="pill">Jan 2024 – Aug 2024</span>
-        </div>
-        <p class="muted">Buze Platforms Private Limited · Ahmedabad, India</p>
-        <ul class="checklist">
-          <li>Election monitoring with real-time people counting; managed 200 AWS Linux servers with edge AI cameras; +60% accuracy.</li>
-          <li>Real-time human detection on Jetson Nano + DeepStream; +50% processing efficiency.</li>
-          <li>Helmet violation detection (transformer-based) on AWS EC2 with DVC + MLflow; +55% speed, +30% accuracy.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card-top">
-          <h3>Data Science Intern</h3>
-          <span class="pill">Jun 2023 – Aug 2023</span>
-        </div>
-        <p class="muted">Techdome Solutions Private Limited · Bhopal, India</p>
-        <ul class="checklist">
-          <li>Chat toxicity analyzer boosting interaction by 25% (hate/obscenity detection).</li>
-          <li>Topic-model recommendation engine improving UX by 30% through user-interest clustering.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card-top">
-          <h3>Research Intern</h3>
-          <span class="pill">May 2023 – Jul 2023</span>
-        </div>
-        <p class="muted">Indian Meteorological Department · Bhopal, India</p>
-        <ul class="checklist">
-          <li>Advanced ML on Doppler radar data; improved lightning detection accuracy by 20%.</li>
-          <li>Enabled early weather warnings through better thunderstorm visualization.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card-top">
-          <h3>Project Trainee</h3>
-          <span class="pill">Jun 2023 – Jul 2023</span>
-        </div>
-        <p class="muted">Neurapses Technology · Pune, India</p>
-        <ul class="checklist">
-          <li>Generative AI for MongoDB query synthesis to boost developer productivity.</li>
-          <li>Visualization layer for automated query insights.</li>
-        </ul>
-      </article>
-      <article class="card">
-        <div class="card-top">
-          <h3>Project Trainee</h3>
-          <span class="pill">May 2022 – Jul 2022</span>
-        </div>
-        <p class="muted">Semiconductor Laboratory (MeitY) · Chandigarh, India</p>
-        <ul class="checklist">
-          <li>Computer vision surveillance to classify 7 vehicle types; persisted counts for analytics.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Projects</p>
-        <h2>Featured Work</h2>
+    <!-- Work Experience -->
+    <section id="work-experience" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2>Work Experience</h2>
+        </div>
       </div>
-    </div>
-    <div class="container card-grid">
-      <article class="card hoverable">
-        <div class="card-top">
-          <h3>Intelligent Tax Document Extraction System</h3>
-          <span class="pill">2025</span>
-        </div>
-        <p class="muted">Azure Document Intelligence · LLM prompts · HITL</p>
-        <p>Noisy, multi-format tax PDF processing with confidence routing and human-in-the-loop; cut manual review time by 80%.</p>
-      </article>
-      <article class="card hoverable">
-        <div class="card-top">
-          <h3>AI-Powered Mock Interview Platform</h3>
-          <span class="pill">2025</span>
-        </div>
-        <p class="muted">LLMs · STT · FER · UX Research</p>
-        <p>Multimodal system giving real-time feedback; 40+ user study showed 25% improvement in response quality.</p>
-      </article>
-      <article class="card hoverable">
-        <div class="card-top">
-          <h3>Plastic Waste Detection</h3>
-          <span class="pill">Jun – Sep 2023</span>
-        </div>
-        <p class="muted">Python · Flask · Roboflow · Ultralytics</p>
-        <p>End-to-end detection pipeline for plastic waste with hosted inference.</p>
-      </article>
-      <article class="card hoverable">
-        <div class="card-top">
-          <h3>Song Recommendation Engine</h3>
-          <span class="pill">Apr – May 2023</span>
-        </div>
-        <p class="muted">Python · Flask · NLTK · ML</p>
-        <p>NLP + topic modeling to personalize music discovery.</p>
-      </article>
-      <article class="card hoverable">
-        <div class="card-top">
-          <h3>OCR Web Portal</h3>
-          <span class="pill">Oct – Dec 2022</span>
-        </div>
-        <p class="muted">Flask · Azure · JS</p>
-        <p>Document OCR portal with cloud-backed processing.</p>
-      </article>
-      <article class="card hoverable">
-        <div class="card-top">
-          <h3>PRINTF - Printing Service Web Portal</h3>
-          <span class="pill">Feb – Mar 2023</span>
-        </div>
-        <p class="muted">Node.js · Firebase · React · Twilio</p>
-        <p>Online printing workflow with notifications and order management.</p>
-      </article>
-    </div>
-  </section>
+      <div class="container card-grid">
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Data Science Intern (Group Function AI)</h3>
+            <span class="pill">May 2025 – Dec 2025</span>
+          </div>
+          <p class="muted">Manulife Insurance · Toronto, Canada</p>
+          <ul class="checklist">
+            <li>Automated mortality experience variance/trend analysis with SQL & PySpark; reduced manual workflows by 40% via Power BI + AI narratives.</li>
+            <li>Built ARIMA & Prophet cashflow forecasts, improving MAPE by 15% for proactive financial decisions.</li>
+            <li>Production ML with MLflow for experiment tracking, reproducibility, and CI/CD-aligned deployments.</li>
+            <li>Engineered Neo4j treaty knowledge graph and multi-hop reasoning to support GenAI retrieval; improved chatbot accuracy by 35%.</li>
+          </ul>
+        </article>
 
-  <!-- Education -->
-  <section id="education" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Academics</p>
-        <h2>Education</h2>
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>AI Trainee</h3>
+            <span class="pill">Jan 2024 – Aug 2024</span>
+          </div>
+          <p class="muted">Buze Platforms Private Limited · Ahmedabad, India</p>
+          <ul class="checklist">
+            <li>Election monitoring with real-time people counting; managed 200 AWS Linux servers with edge AI cameras; +60% accuracy.</li>
+            <li>Real-time human detection on Jetson Nano + DeepStream; +50% processing efficiency.</li>
+            <li>Helmet violation detection (transformer-based) on AWS EC2 with DVC + MLflow; +55% speed, +30% accuracy.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Data Science Intern</h3>
+            <span class="pill">Jun 2023 – Aug 2023</span>
+          </div>
+          <p class="muted">Techdome Solutions Private Limited · Bhopal, India</p>
+          <ul class="checklist">
+            <li>Chat toxicity analyzer boosting interaction by 25% (hate/obscenity detection).</li>
+            <li>Topic-model recommendation engine improving UX by 30% through user-interest clustering.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Research Intern</h3>
+            <span class="pill">May 2023 – Jul 2023</span>
+          </div>
+          <p class="muted">Indian Meteorological Department · Bhopal, India</p>
+          <ul class="checklist">
+            <li>Advanced ML on Doppler radar data; improved lightning detection accuracy by 20%.</li>
+            <li>Enabled early weather warnings through better thunderstorm visualization.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Project Trainee</h3>
+            <span class="pill">Jun 2023 – Jul 2023</span>
+          </div>
+          <p class="muted">Neurapses Technology · Pune, India</p>
+          <ul class="checklist">
+            <li>Generative AI for MongoDB query synthesis to boost developer productivity.</li>
+            <li>Visualization layer for automated query insights.</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Project Trainee</h3>
+            <span class="pill">May 2022 – Jul 2022</span>
+          </div>
+          <p class="muted">Semiconductor Laboratory (MeitY) · Chandigarh, India</p>
+          <ul class="checklist">
+            <li>Computer vision surveillance to classify 7 vehicle types; persisted counts for analytics.</li>
+          </ul>
+        </article>
       </div>
-    </div>
-    <div class="container card-grid">
-      <article class="card">
-        <div class="card-top">
-          <h3>Master of Engineering, Computing and Software</h3>
-          <span class="pill">Sep 2024 – Apr 2026</span>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Featured Work</h2>
         </div>
-        <p class="muted">McMaster University · Hamilton, Ontario, Canada</p>
-      </article>
-      <article class="card">
-        <div class="card-top">
-          <h3>Bachelor of Technology, Computer Engineering</h3>
-          <span class="pill">Nov 2020 – Jun 2024</span>
+      </div>
+      <div class="container card-grid">
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Intelligent Tax Document Extraction System</h3>
+            <span class="pill">2025</span>
+          </div>
+          <p class="muted">Azure Document Intelligence · LLM prompts · HITL</p>
+          <p>Noisy, multi-format tax PDF processing with confidence routing and human-in-the-loop; cut manual review time by 80%.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>AI-Powered Mock Interview Platform</h3>
+            <span class="pill">2025</span>
+          </div>
+          <p class="muted">LLMs · STT · FER · UX Research</p>
+          <p>Multimodal system giving real-time feedback; 40+ user study showed 25% improvement in response quality.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Plastic Waste Detection</h3>
+            <span class="pill">Jun – Sep 2023</span>
+          </div>
+          <p class="muted">Python · Flask · Roboflow · Ultralytics</p>
+          <p>End-to-end detection pipeline for plastic waste with hosted inference.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Song Recommendation Engine</h3>
+            <span class="pill">Apr – May 2023</span>
+          </div>
+          <p class="muted">Python · Flask · NLTK · ML</p>
+          <p>NLP + topic modeling to personalize music discovery.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>OCR Web Portal</h3>
+            <span class="pill">Oct – Dec 2022</span>
+          </div>
+          <p class="muted">Flask · Azure · JS</p>
+          <p>Document OCR portal with cloud-backed processing.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>PRINTF - Printing Service Web Portal</h3>
+            <span class="pill">Feb – Mar 2023</span>
+          </div>
+          <p class="muted">Node.js · Firebase · React · Twilio</p>
+          <p>Online printing workflow with notifications and order management.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Academics</p>
+          <h2>Education</h2>
         </div>
-        <p class="muted">Pandit Deendayal Energy University · India</p>
-      </article>
-    </div>
-  </section>
+      </div>
+      <div class="container bento bento-2">
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Master of Engineering, Computing and Software</h3>
+            <span class="pill">Sep 2024 – Apr 2026</span>
+          </div>
+          <p class="muted">McMaster University · Hamilton, Ontario, Canada</p>
+        </article>
 
-  <!-- Positions of Responsibility -->
-  <section id="responsibilities" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Leadership</p>
-        <h2>Positions of Responsibility</h2>
+        <article class="card reveal">
+          <div class="card-top">
+            <h3>Bachelor of Technology, Computer Engineering</h3>
+            <span class="pill">Nov 2020 – Jun 2024</span>
+          </div>
+          <p class="muted">Pandit Deendayal Energy University · India</p>
+        </article>
       </div>
-    </div>
-    <div class="container card-grid">
-      <article class="card hoverable">
-        <h3>Student Placement Coordinator</h3>
-        <p class="muted">Career Development Cell, PDEU | Jan 2023 - Present</p>
-      </article>
-      <article class="card hoverable">
-        <h3>AI/ML Core Member</h3>
-        <p class="muted">Encode: CSE Club of PDEU | Nov 2022 - May 2023</p>
-      </article>
-      <article class="card hoverable">
-        <h3>Public Relation Head</h3>
-        <p class="muted">IEEE Student Chapter, PDEU | Jul 2021 - May 2023</p>
-      </article>
-      <article class="card hoverable">
-        <h3>Social Media Head</h3>
-        <p class="muted">Civiqueniti, Public Administration Club of PDEU | Jul 2022 - May 2023</p>
-      </article>
-    </div>
-  </section>
+    </section>
 
-  <!-- Publications -->
-  <section id="publications" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Research</p>
-        <h2>Publications</h2>
+    <!-- Responsibilities -->
+    <section id="responsibilities" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Leadership</p>
+          <h2>Positions of Responsibility</h2>
+        </div>
       </div>
-    </div>
-    <div class="container card-grid list-grid">
-      <article class="card hoverable">
-        <p><a href="https://doi.org/10.1109/iSSSC56467.2022.10051313" target="_blank">(Conference) Efficient Deep Learning Based Vehicle Classification System for Indian Vehicle</a></p>
-      </article>
-      <article class="card hoverable"><p>(Journal) Facial Emotion Recognition With Deep Neural Network - Accepted</p></article>
-      <article class="card hoverable"><p>(Journal) AI Enabled Ozone Forecasting Model using DNN for Indian Air Quality Data - In Review</p></article>
-      <article class="card hoverable"><p>(Journal) Water Quality Prediction Using Machine Learning - In Review</p></article>
-      <article class="card hoverable"><p>(Journal) An Intelligent Classification of Human Protein-Coding Genes: An AI-Driven Approach - In Review</p></article>
-      <article class="card hoverable"><p>(Journal) Advancement in Efficient Approaches for Detection of Prevalent Phishing Attacks - In Review</p></article>
-    </div>
-  </section>
+      <div class="container card-grid">
+        <article class="card reveal">
+          <h3>Student Placement Coordinator</h3>
+          <p class="muted">Career Development Cell, PDEU | Jan 2023 - Present</p>
+        </article>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Toolkit</p>
-        <h2>Skills</h2>
-      </div>
-    </div>
-    <div class="container skills-grid card">
-      <div class="skills-icons">
-        <a href="https://www.python.org/" target="_blank"><img src="https://skillicons.dev/icons?i=py" alt="Python" /></a>
-        <a href="https://www.oracle.com/java/" target="_blank"><img src="https://skillicons.dev/icons?i=java" alt="Java" /></a>
-        <a href="https://www.r-project.org/" target="_blank"><img src="https://skillicons.dev/icons?i=r" alt="R" /></a>
-        <a href="https://www.mysql.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /></a>
-        <a href="https://pytorch.org/" target="_blank"><img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" /></a>
-        <a href="https://www.tensorflow.org/" target="_blank"><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" /></a>
-        <a href="https://scikit-learn.org/" target="_blank"><img src="https://skillicons.dev/icons?i=sklearn" alt="scikit-learn" /></a>
-        <a href="https://pandas.pydata.org/" target="_blank"><img src="https://cdn.simpleicons.org/pandas/3776AB" alt="Pandas" /></a>
-        <a href="https://numpy.org/" target="_blank"><img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" /></a>
-        <a href="https://spark.apache.org/" target="_blank"><img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="PySpark" /></a>
-        <a href="https://mlflow.org/" target="_blank"><img src="https://cdn.simpleicons.org/mlflow/0194E2" alt="MLflow" /></a>
-        <!-- <a href="https://neo4j.com/" target="_blank"><img src="https://skillicons.dev/icons?i=neo4j" alt="Neo4j" /></a> -->
-        <a href="https://www.anaconda.com/" target="_blank"><img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" /></a>
-        <a href="https://fastapi.tiangolo.com/" target="_blank"><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" /></a>
-        <a href="https://www.mongodb.com/" target="_blank"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /></a>
-        <a href="https://www.postgresql.org/" target="_blank"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /></a>
-        <a href="https://www.docker.com/" target="_blank"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" /></a>
-        <a href="https://kubernetes.io/" target="_blank"><img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" /></a>
-        <a href="https://aws.amazon.com/" target="_blank"><img src="https://skillicons.dev/icons?i=aws" alt="AWS" /></a>
-        <a href="https://azure.microsoft.com/" target="_blank"><img src="https://skillicons.dev/icons?i=azure" alt="Azure" /></a>
-        <a href="https://cloud.google.com/" target="_blank"><img src="https://skillicons.dev/icons?i=gcp" alt="GCP" /></a>
-        <a href="https://code.visualstudio.com/" target="_blank"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" /></a>
-        <a href="https://git-scm.com/" target="_blank"><img src="https://skillicons.dev/icons?i=git" alt="Git" /></a>
-        <a href="https://www.linux.org/" target="_blank"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /></a>
-      </div>
-    </div>
-  </section>
+        <article class="card reveal">
+          <h3>AI/ML Core Member</h3>
+          <p class="muted">Encode: CSE Club of PDEU | Nov 2022 - May 2023</p>
+        </article>
 
-  <!-- Certifications -->
-  <section id="certifications" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Certifications</p>
-        <h2>Creds</h2>
-      </div>
-    </div>
-    <div class="container card-grid list-grid">
-      <article class="card hoverable"><p>Udacity: Nanodegree in AI Programming with Python (Valid until: Dec 2026)</p></article>
-      <article class="card hoverable"><p>Microsoft: Certified Azure AI Fundamentals (Valid until: Nov 2026)</p></article>
-      <article class="card hoverable"><p>NVIDIA: Fundamentals of Deep Learning; AI for Predictive Maintenance; Transformer-based NLP Apps (Valid until: Oct 2026)</p></article>
-      <article class="card hoverable"><p>NPTEL IIT Kharagpur: Deep Learning</p></article>
-      <article class="card hoverable"><p>IBM: Data Analytics Internship at CSRBox; Introduction to Data Science; Data Science Tools</p></article>
-      <article class="card hoverable"><p>ISRO: Geoprocessing With Python Certification</p></article>
-      <article class="card hoverable"><p>Columbia University (edX): Machine Learning for Data Science and Analytics</p></article>
-      <article class="card hoverable"><p>Udemy: Complete ML & Data Science with Python; Python for Beginners (2022)</p></article>
-    </div>
-  </section>
+        <article class="card reveal">
+          <h3>Public Relation Head</h3>
+          <p class="muted">IEEE Student Chapter, PDEU | Jul 2021 - May 2023</p>
+        </article>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container section-header">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s build something</h2>
+        <article class="card reveal">
+          <h3>Social Media Head</h3>
+          <p class="muted">Civiqueniti, Public Administration Club of PDEU | Jul 2022 - May 2023</p>
+        </article>
       </div>
-    </div>
-    <div class="container card contact-card">
-      <div>
-        <p class="muted">Email</p>
-        <a class="contact-link" href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
-        <p class="muted" style="margin-top:8px;">Phone</p>
-        <a class="contact-link" href="tel:+15196356898">+1 519-635-6898</a>
-      </div>
-      <div class="contact-socials">
-        <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/TheNobody-12" target="_blank"><i class="bx bxl-github"></i></a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer id="footer" class="footer">
-    <div class="container flex between center-y wrap gap-12">
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h2>Publications</h2>
+        </div>
+      </div>
+      <div class="container bento list-grid">
+        <article class="card reveal">
+          <p><a href="https://doi.org/10.1109/iSSSC56467.2022.10051313" target="_blank">(Conference) Efficient Deep Learning Based Vehicle Classification System for Indian Vehicle</a></p>
+        </article>
+        <article class="card reveal"><p>(Journal) Facial Emotion Recognition With Deep Neural Network - Accepted</p></article>
+        <article class="card reveal"><p>(Journal) AI Enabled Ozone Forecasting Model using DNN for Indian Air Quality Data - In Review</p></article>
+        <article class="card reveal"><p>(Journal) Water Quality Prediction Using Machine Learning - In Review</p></article>
+        <article class="card reveal"><p>(Journal) An Intelligent Classification of Human Protein-Coding Genes: An AI-Driven Approach - In Review</p></article>
+        <article class="card reveal"><p>(Journal) Advancement in Efficient Approaches for Detection of Prevalent Phishing Attacks - In Review</p></article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Toolkit</p>
+          <h2>Skills</h2>
+        </div>
+      </div>
+      <div class="container card reveal">
+        <div class="bento skills-bento">
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=py" alt="Python" /><span>Python</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=java" alt="Java" /><span>Java</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=r" alt="R" /><span>R</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /><span>MySQL</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" /><span>PyTorch</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" /><span>TensorFlow</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=sklearn" alt="scikit-learn" /><span>scikit-learn</span></div>
+          <div class="skill-item"><img src="https://cdn.simpleicons.org/pandas/3776AB" alt="Pandas" /><span>Pandas</span></div>
+          <div class="skill-item"><img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" /><span>NumPy</span></div>
+          <div class="skill-item"><img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="PySpark" /><span>PySpark</span></div>
+          <div class="skill-item"><img src="https://cdn.simpleicons.org/mlflow/0194E2" alt="MLflow" /><span>MLflow</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" /><span>Anaconda</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" /><span>FastAPI</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /><span>MongoDB</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /><span>PostgreSQL</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" /><span>Docker</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" /><span>Kubernetes</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=aws" alt="AWS" /><span>AWS</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=azure" alt="Azure" /><span>Azure</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=gcp" alt="GCP" /><span>GCP</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" /><span>VS Code</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=git" alt="Git" /><span>Git</span></div>
+          <div class="skill-item"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /><span>Linux</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Certifications</p>
+          <h2>Creds</h2>
+        </div>
+      </div>
+      <div class="container bento list-grid">
+        <article class="card reveal"><p>Udacity: Nanodegree in AI Programming with Python (Valid until: Dec 2026)</p></article>
+        <article class="card reveal"><p>Microsoft: Certified Azure AI Fundamentals (Valid until: Nov 2026)</p></article>
+        <article class="card reveal"><p>NVIDIA: Fundamentals of Deep Learning; AI for Predictive Maintenance; Transformer-based NLP Apps (Valid until: Oct 2026)</p></article>
+        <article class="card reveal"><p>NPTEL IIT Kharagpur: Deep Learning</p></article>
+        <article class="card reveal"><p>IBM: Data Analytics Internship at CSRBox; Introduction to Data Science; Data Science Tools</p></article>
+        <article class="card reveal"><p>ISRO: Geoprocessing With Python Certification</p></article>
+        <article class="card reveal"><p>Columbia University (edX): Machine Learning for Data Science and Analytics</p></article>
+        <article class="card reveal"><p>Udemy: Complete ML & Data Science with Python; Python for Beginners (2022)</p></article>
+      </div>
+    </section>
+
+    <!-- Latest Writing -->
+    <section id="writing" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Lab notebook</p>
+          <h2>Latest Writing</h2>
+        </div>
+        <a class="btn ghost" href="blog/index.html">View all posts</a>
+      </div>
+      <div id="latest-posts-grid" class="container latest-posts-grid reveal">
+        <p class="muted">Loading latest posts…</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container section-header reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something</h2>
+        </div>
+      </div>
+      <div class="container card contact-card reveal">
+        <div>
+          <p class="muted">Email</p>
+          <a class="contact-link" href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
+          <p class="muted" style="margin-top:10px;">Phone</p>
+          <a class="contact-link" href="tel:+15196356898">+1 519-635-6898</a>
+        </div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
       <div>
-        <p>&copy; 2025 Sarthak Kapaliya. All rights reserved.</p>
+        <p>© 2025 Sarthak Kapaliya. All rights reserved.</p>
         <p class="muted">Every second that ticks by, the future is running out.</p>
       </div>
-      <div class="social-links flex center-y gap-12">
-        <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/TheNobody-12" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://twitter.com/SarthakKapaliya" target="_blank"><i class="bx bxl-twitter"></i></a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://twitter.com/SarthakKapaliya" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
       </div>
     </div>
-    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <button class="back-to-top" aria-label="Back to top"><i class="bx bx-arrow-to-top"></i></button>
+
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>
