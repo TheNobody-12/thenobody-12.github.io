@@ -36,8 +36,10 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
 </head>
 <body>
+  <div class="scroll-progress"><div class="scroll-progress__bar"></div></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <div class="topbar">
@@ -57,15 +59,15 @@
       <a class="logo" href="#home">Sarthak<span>.</span></a>
       <nav class="navbar" aria-label="Primary">
         <ul class="nav-links">
-          <li><a class="nav-link active" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#work-experience">Work</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#education">Education</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#publications">Research</a></li>
-          <li><a class="nav-link" href="blog/index.html">Blog</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link nav-anim active" href="#home">Home</a></li>
+          <li><a class="nav-link nav-anim" href="#about">About</a></li>
+          <li><a class="nav-link nav-anim" href="#work-experience">Work</a></li>
+          <li><a class="nav-link nav-anim" href="#projects">Projects</a></li>
+          <li><a class="nav-link nav-anim" href="#education">Education</a></li>
+          <li><a class="nav-link nav-anim" href="#skills">Skills</a></li>
+          <li><a class="nav-link nav-anim" href="#publications">Research</a></li>
+          <li><a class="nav-link nav-anim" href="blog/index.html">Blog</a></li>
+          <li><a class="nav-link nav-anim" href="#contact">Contact</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="bx bx-menu"></i></button>
       </nav>
@@ -76,13 +78,17 @@
     <!-- Hero -->
     <section id="home" class="hero">
       <video class="hero-video" src="home.mp4" autoplay loop muted playsinline></video>
-      <canvas id="hero-canvas" class="hero-canvas"></canvas>
+      <canvas class="constellation-canvas" data-constellation></canvas>
       <div class="hero-overlay"></div>
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
+        <div class="hero-copy" data-reveal data-reveal-delay="80">
           <p class="eyebrow">AI & Data Science Professional</p>
-          <h1>I build production ML systems — forecasting, knowledge graphs, and edge vision.</h1>
+          <h1>I build <span class="gradient-text">production ML systems</span> — forecasting, knowledge graphs, and edge vision.</h1>
           <p class="subtitle">From messy data to deployed models: I ship analytics, GenAI retrieval, and real-time computer vision.</p>
+          <p class="type-line">
+            <span class="mono" style="color:#2dd4bf">&gt;</span>
+            <span data-typewriter='["Forecasting with ARIMA & Prophet.","Knowledge graphs for GenAI retrieval.","Computer vision at the edge.","MLOps that actually ships."]'></span>
+          </p>
           <div class="hero-actions">
             <a class="btn primary" href="#about">About Me</a>
             <a class="btn ghost" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Download Resume</a>
@@ -94,7 +100,7 @@
           </div>
         </div>
 
-        <div class="hero-card reveal">
+        <div class="hero-card" data-reveal data-reveal-delay="160">
           <div class="avatar-wrap">
             <img src="Sarthak_Profile.png" alt="Sarthak Kapaliya" class="avatar" />
           </div>
@@ -102,9 +108,9 @@
             <h3>Sarthak Kapaliya</h3>
             <p>AI, Data Science, MLOps, Forecasting, Knowledge Graphs.</p>
             <div class="stats">
-              <div><span class="label">Experience</span><strong>5+ roles</strong></div>
-              <div><span class="label">Projects</span><strong>6+</strong></div>
-              <div><span class="label">Publications</span><strong>6</strong></div>
+              <div><span class="label">Experience</span><strong><span data-count="5" data-suffix="+">0</span> roles</strong></div>
+              <div><span class="label">Projects</span><strong><span data-count="6" data-suffix="+">0</span></strong></div>
+              <div><span class="label">Publications</span><strong><span data-count="6">0</span></strong></div>
             </div>
           </div>
         </div>
@@ -113,14 +119,14 @@
 
     <!-- About -->
     <section id="about" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">About</p>
           <h2>Who I am</h2>
         </div>
       </div>
       <div class="container bento about-grid">
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <p class="lead"><strong>Hi 👋! I'm Sarthak Kapaliya.</strong></p>
           <p>I am an AI and Data Science professional focused on ML, NLP, computer vision, forecasting, and production-grade MLOps. I enjoy building systems that are explainable, reliable, and measurable. My work bridges the gap between research and real-world deployment.</p>
           <p>Recently, I’ve shipped production workflows in insurance analytics (variance analysis, forecasting, knowledge graphs), edge AI for real-time vision, and GenAI-driven document intelligence for complex financial data.</p>
@@ -130,7 +136,7 @@
           </div>
         </article>
 
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <div class="card-top">
             <h3>Highlights</h3>
             <span class="pill">Impact</span>
@@ -148,14 +154,14 @@
 
     <!-- Work Experience -->
     <section id="work-experience" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Experience</p>
           <h2>Work Experience</h2>
         </div>
       </div>
       <div class="container timeline">
-        <article class="timeline-item reveal">
+        <article class="timeline-item" data-reveal>
           <div class="timeline-date"><span class="pill">May 2025 – Dec 2025</span></div>
           <div class="timeline-body">
             <h3>Data Science Intern (Group Function AI)</h3>
@@ -169,7 +175,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal">
+        <article class="timeline-item" data-reveal>
           <div class="timeline-date"><span class="pill">Jan 2024 – Aug 2024</span></div>
           <div class="timeline-body">
             <h3>AI Trainee</h3>
@@ -182,7 +188,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal">
+        <article class="timeline-item" data-reveal>
           <div class="timeline-date"><span class="pill">Jun 2023 – Aug 2023</span></div>
           <div class="timeline-body">
             <h3>Data Science Intern</h3>
@@ -194,7 +200,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal">
+        <article class="timeline-item" data-reveal>
           <div class="timeline-date"><span class="pill">May 2023 – Jul 2023</span></div>
           <div class="timeline-body">
             <h3>Research Intern</h3>
@@ -206,7 +212,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal">
+        <article class="timeline-item" data-reveal>
           <div class="timeline-date"><span class="pill">Jun 2023 – Jul 2023</span></div>
           <div class="timeline-body">
             <h3>Project Trainee</h3>
@@ -218,7 +224,7 @@
           </div>
         </article>
 
-        <article class="timeline-item reveal">
+        <article class="timeline-item" data-reveal>
           <div class="timeline-date"><span class="pill">May 2022 – Jul 2022</span></div>
           <div class="timeline-body">
             <h3>Project Trainee</h3>
@@ -233,7 +239,7 @@
 
     <!-- Projects -->
     <section id="projects" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Projects</p>
           <h2>Featured Work</h2>
@@ -241,7 +247,7 @@
       </div>
 
       <div class="container project-grid">
-        <article class="project-card reveal">
+        <article class="project-card spotlight" data-reveal>
           <div class="project-thumb" aria-hidden="true">
             <div class="thumb-shape shape-doc"></div>
           </div>
@@ -259,7 +265,7 @@
           </div>
         </article>
 
-        <article class="project-card reveal">
+        <article class="project-card spotlight" data-reveal>
           <div class="project-thumb" aria-hidden="true">
             <div class="thumb-shape shape-interview"></div>
           </div>
@@ -278,7 +284,7 @@
           </div>
         </article>
 
-        <article class="project-card reveal">
+        <article class="project-card spotlight" data-reveal>
           <div class="project-thumb" aria-hidden="true">
             <div class="thumb-shape shape-waste"></div>
           </div>
@@ -297,7 +303,7 @@
           </div>
         </article>
 
-        <article class="project-card reveal">
+        <article class="project-card spotlight" data-reveal>
           <div class="project-thumb" aria-hidden="true">
             <div class="thumb-shape shape-music"></div>
           </div>
@@ -317,20 +323,20 @@
         </article>
       </div>
 
-      <div class="container section-header reveal" style="margin-top:60px;">
+      <div class="container section-header" data-reveal style="margin-top:60px;">
         <div>
           <p class="eyebrow">Archive</p>
           <h2>More Work</h2>
         </div>
       </div>
-      <div class="container archive-list reveal">
-        <article class="archive-item">
+      <div class="container archive-list" data-reveal>
+        <article class="archive-item spotlight">
           <div>
             <h3>OCR Web Portal</h3>
             <p class="muted">Flask · Azure · JS · Oct – Dec 2022</p>
           </div>
         </article>
-        <article class="archive-item">
+        <article class="archive-item spotlight">
           <div>
             <h3>PRINTF — Printing Service Web Portal</h3>
             <p class="muted">Node.js · Firebase · React · Twilio · Feb – Mar 2023</p>
@@ -341,14 +347,14 @@
 
     <!-- Education -->
     <section id="education" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Academics</p>
           <h2>Education</h2>
         </div>
       </div>
       <div class="container bento bento-2">
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <div class="card-top">
             <h3>Master of Engineering, Computing and Software</h3>
             <span class="pill">Sep 2024 – Apr 2026</span>
@@ -356,7 +362,7 @@
           <p class="muted">McMaster University · Hamilton, Ontario, Canada</p>
         </article>
 
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <div class="card-top">
             <h3>Bachelor of Technology, Computer Engineering</h3>
             <span class="pill">Nov 2020 – Jun 2024</span>
@@ -368,29 +374,29 @@
 
     <!-- Responsibilities -->
     <section id="responsibilities" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Leadership</p>
           <h2>Positions of Responsibility</h2>
         </div>
       </div>
       <div class="container card-grid">
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <h3>Student Placement Coordinator</h3>
           <p class="muted">Career Development Cell, PDEU | Jan 2023 - Present</p>
         </article>
 
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <h3>AI/ML Core Member</h3>
           <p class="muted">Encode: CSE Club of PDEU | Nov 2022 - May 2023</p>
         </article>
 
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <h3>Public Relation Head</h3>
           <p class="muted">IEEE Student Chapter, PDEU | Jul 2021 - May 2023</p>
         </article>
 
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <h3>Social Media Head</h3>
           <p class="muted">Civiqueniti, Public Administration Club of PDEU | Jul 2022 - May 2023</p>
         </article>
@@ -399,33 +405,33 @@
 
     <!-- Publications -->
     <section id="publications" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Research</p>
           <h2>Publications</h2>
         </div>
       </div>
       <div class="container bento list-grid">
-        <article class="card reveal">
+        <article class="card spotlight" data-reveal>
           <p><a href="https://doi.org/10.1109/iSSSC56467.2022.10051313" target="_blank">(Conference) Efficient Deep Learning Based Vehicle Classification System for Indian Vehicle</a></p>
         </article>
-        <article class="card reveal"><p>(Journal) Facial Emotion Recognition With Deep Neural Network - Accepted</p></article>
-        <article class="card reveal"><p>(Journal) AI Enabled Ozone Forecasting Model using DNN for Indian Air Quality Data - In Review</p></article>
-        <article class="card reveal"><p>(Journal) Water Quality Prediction Using Machine Learning - In Review</p></article>
-        <article class="card reveal"><p>(Journal) An Intelligent Classification of Human Protein-Coding Genes: An AI-Driven Approach - In Review</p></article>
-        <article class="card reveal"><p>(Journal) Advancement in Efficient Approaches for Detection of Prevalent Phishing Attacks - In Review</p></article>
+        <article class="card spotlight" data-reveal><p>(Journal) Facial Emotion Recognition With Deep Neural Network - Accepted</p></article>
+        <article class="card spotlight" data-reveal><p>(Journal) AI Enabled Ozone Forecasting Model using DNN for Indian Air Quality Data - In Review</p></article>
+        <article class="card spotlight" data-reveal><p>(Journal) Water Quality Prediction Using Machine Learning - In Review</p></article>
+        <article class="card spotlight" data-reveal><p>(Journal) An Intelligent Classification of Human Protein-Coding Genes: An AI-Driven Approach - In Review</p></article>
+        <article class="card spotlight" data-reveal><p>(Journal) Advancement in Efficient Approaches for Detection of Prevalent Phishing Attacks - In Review</p></article>
       </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Toolkit</p>
           <h2>Skills</h2>
         </div>
       </div>
-      <div class="container card reveal">
+      <div class="container card spotlight" data-reveal>
         <div class="bento skills-bento">
           <div class="skill-item"><img src="https://skillicons.dev/icons?i=py" alt="Python" /><span>Python</span></div>
           <div class="skill-item"><img src="https://skillicons.dev/icons?i=java" alt="Java" /><span>Java</span></div>
@@ -456,47 +462,47 @@
 
     <!-- Certifications -->
     <section id="certifications" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Certifications</p>
           <h2>Creds</h2>
         </div>
       </div>
       <div class="container bento list-grid">
-        <article class="card reveal"><p>Udacity: Nanodegree in AI Programming with Python (Valid until: Dec 2026)</p></article>
-        <article class="card reveal"><p>Microsoft: Certified Azure AI Fundamentals (Valid until: Nov 2026)</p></article>
-        <article class="card reveal"><p>NVIDIA: Fundamentals of Deep Learning; AI for Predictive Maintenance; Transformer-based NLP Apps (Valid until: Oct 2026)</p></article>
-        <article class="card reveal"><p>NPTEL IIT Kharagpur: Deep Learning</p></article>
-        <article class="card reveal"><p>IBM: Data Analytics Internship at CSRBox; Introduction to Data Science; Data Science Tools</p></article>
-        <article class="card reveal"><p>ISRO: Geoprocessing With Python Certification</p></article>
-        <article class="card reveal"><p>Columbia University (edX): Machine Learning for Data Science and Analytics</p></article>
-        <article class="card reveal"><p>Udemy: Complete ML & Data Science with Python; Python for Beginners (2022)</p></article>
+        <article class="card spotlight" data-reveal><p>Udacity: Nanodegree in AI Programming with Python (Valid until: Dec 2026)</p></article>
+        <article class="card spotlight" data-reveal><p>Microsoft: Certified Azure AI Fundamentals (Valid until: Nov 2026)</p></article>
+        <article class="card spotlight" data-reveal><p>NVIDIA: Fundamentals of Deep Learning; AI for Predictive Maintenance; Transformer-based NLP Apps (Valid until: Oct 2026)</p></article>
+        <article class="card spotlight" data-reveal><p>NPTEL IIT Kharagpur: Deep Learning</p></article>
+        <article class="card spotlight" data-reveal><p>IBM: Data Analytics Internship at CSRBox; Introduction to Data Science; Data Science Tools</p></article>
+        <article class="card spotlight" data-reveal><p>ISRO: Geoprocessing With Python Certification</p></article>
+        <article class="card spotlight" data-reveal><p>Columbia University (edX): Machine Learning for Data Science and Analytics</p></article>
+        <article class="card spotlight" data-reveal><p>Udemy: Complete ML & Data Science with Python; Python for Beginners (2022)</p></article>
       </div>
     </section>
 
     <!-- Latest Writing -->
     <section id="writing" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Lab notebook</p>
           <h2>Latest Writing</h2>
         </div>
         <a class="btn ghost" href="blog/index.html">View all posts</a>
       </div>
-      <div id="latest-posts-grid" class="container latest-posts-grid reveal">
+      <div id="latest-posts-grid" class="container latest-posts-grid" data-reveal>
         <p class="muted">Loading latest posts…</p>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <div class="container section-header reveal">
+      <div class="container section-header" data-reveal>
         <div>
           <p class="eyebrow">Contact</p>
           <h2>Let’s build something</h2>
         </div>
       </div>
-      <div class="container card contact-card reveal">
+      <div class="container card spotlight contact-card" data-reveal>
         <div>
           <p class="muted">Email</p>
           <a class="contact-link" href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
@@ -526,5 +532,6 @@
   <button class="back-to-top" aria-label="Back to top"><i class="bx bx-arrow-to-top"></i></button>
 
   <script type="module" src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
 </body>
 </html>
