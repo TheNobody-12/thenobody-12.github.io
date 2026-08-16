@@ -1,0 +1,198 @@
+/* ============================================================
+   animations.css — drop-in animation styles
+   Matches your portfolio palette: near-black bg, teal accent.
+   Override anything via the CSS variables below.
+   ============================================================ */
+
+:root {
+  --anim-accent: #2dd4bf;          /* your teal */
+  --anim-accent-soft: rgba(45, 212, 191, 0.14);
+  --anim-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --anim-duration: 0.9s;
+}
+
+/* ---------- 1. Scroll progress bar (top of page) ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 9999;
+  pointer-events: none;
+  background: transparent;
+}
+.scroll-progress__bar {
+  height: 100%;
+  width: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: linear-gradient(90deg, var(--anim-accent), #5eead4);
+  box-shadow: 0 0 12px rgba(45, 212, 191, 0.55);
+}
+
+/* ---------- 2. Scroll reveal (fade + rise) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity var(--anim-duration) var(--anim-ease),
+    transform var(--anim-duration) var(--anim-ease);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Stagger helper: add .reveal-group to a parent, children animate one after another */
+.reveal-group > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity var(--anim-duration) var(--anim-ease),
+    transform var(--anim-duration) var(--anim-ease);
+  transition-delay: calc(var(--i, 0) * 90ms);
+  will-change: opacity, transform;
+}
+.reveal-group.in > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- 3. Typewriter caret ---------- */
+.typewriter::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 3px;
+  vertical-align: -0.12em;
+  background: var(--anim-accent);
+  animation: caret-blink 1s steps(1) infinite;
+}
+@keyframes caret-blink {
+  0%, 45% { opacity: 1; }
+  50%, 95% { opacity: 0; }
+}
+
+/* ---------- 4. Animated gradient text ---------- */
+.gradient-text {
+  background: linear-gradient(
+    100deg,
+    var(--anim-accent) 0%,
+    #5eead4 25%,
+    #a7f3d0 50%,
+    var(--anim-accent) 75%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-slide 7s linear infinite;
+}
+@keyframes gradient-slide {
+  to { background-position: 220% 0; }
+}
+
+/* ---------- 5. Spotlight cards (glow follows cursor) ---------- */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    320px circle at var(--mx, 50%) var(--my, 50%),
+    var(--anim-accent-soft),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.spotlight:hover::before {
+  opacity: 1;
+}
+/* Thin accent border that lights up near the cursor */
+.spotlight::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    220px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(45, 212, 191, 0.55),
+    transparent 70%
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+.spotlight:hover::after {
+  opacity: 1;
+}
+
+/* ---------- 6. Hero constellation canvas ---------- */
+.constellation-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;   /* never blocks clicks */
+  z-index: 0;
+}
+
+/* ---------- 7. Button hover lift ---------- */
+.btn-anim {
+  transition: transform 0.25s var(--anim-ease), box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.btn-anim:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.25);
+}
+.btn-anim:active {
+  transform: translateY(0);
+}
+
+/* ---------- 8. Nav link underline sweep ---------- */
+.nav-anim {
+  position: relative;
+}
+.nav-anim::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background: var(--anim-accent);
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 0.35s var(--anim-ease);
+}
+.nav-anim:hover::after,
+.nav-anim.active::after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+
+/* ---------- Accessibility: honor reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-group > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .gradient-text { animation: none; }
+  .typewriter::after { animation: none; opacity: 1; }
+  .btn-anim, .nav-anim::after { transition: none; }
+}

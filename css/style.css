@@ -287,7 +287,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 100px 0 80px;
   overflow: hidden;
 }
-.hero-canvas,
 .hero-video {
   position: absolute;
   inset: 0;
@@ -296,7 +295,6 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   z-index: -2;
 }
-.hero-canvas { z-index: -1; opacity: 0.45; pointer-events: none; }
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -325,6 +323,12 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 520px;
   margin-bottom: 28px;
 }
+.type-line {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+.type-line .mono { font-family: var(--font-mono); }
 .hero-actions { display: flex; gap: 14px; margin-bottom: 28px; flex-wrap: wrap; }
 .hero-socials { display: flex; gap: 14px; }
 .hero-socials a {
@@ -681,25 +685,6 @@ h1, h2, h3, h4, h5, h6 {
 .justify-between { justify-content: space-between; }
 .gap-12 { gap: 12px; }
 .wrap { flex-wrap: wrap; }
-
-/* Reveal animation defaults (JS toggles .revealed) */
-.reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity .7s cubic-bezier(.2,.8,.2,1), transform .7s cubic-bezier(.2,.8,.2,1);
-}
-.reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
 
 /* Responsive */
 @media (max-width: 980px) {
