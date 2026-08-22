@@ -7,7 +7,6 @@ excerpt: "Why I'm turning my portfolio into a living lab notebook and what you c
 draft: false
 ---
 
-# Hello World
 
 This is the first post on my new lab notebook. I built this space so I can share short write-ups about the experiments, failures, and lessons that don't fit neatly into a resume or a GitHub README.
 

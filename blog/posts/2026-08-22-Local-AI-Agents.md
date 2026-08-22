@@ -7,7 +7,6 @@ excerpt: ""
 draft: false
 ---
 
-
 Building an automated, AI-driven file organizer sounds simple in theory: scrape text from PDFs, ask an LLM to extract the entities, and use graph algorithms to cluster them into folders. But when you move from theory to running a massive document pipeline locally on your own GPU, things get wild very quickly.
 
 Here is the story of how we debugged and scaled `semantic-organizer`, the roadblocks we hit, and the engineering methodology we used to overcome them.
