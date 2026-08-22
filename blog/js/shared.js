@@ -5,8 +5,14 @@
 const POSTS_URL = './data/posts.json';
 
 export async function fetchPosts() {
-  // Add a cache buster to prevent the browser from caching the old posts.json
-  const res = await fetch(POSTS_URL + '?v=' + new Date().getTime());
+  // Add a cache buster to prevent the browser from caching the old posts.json,
+  // but ONLY if we are not running locally via the file:// protocol (which breaks with query strings).
+  let url = POSTS_URL;
+  if (window.location.protocol !== 'file:') {
+    url += '?v=' + new Date().getTime();
+  }
+  
+  const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to load posts: ${res.status}`);
   const data = await res.json();
   return Array.isArray(data) ? data : data.posts ?? [];
