@@ -5,7 +5,8 @@
 const POSTS_URL = './data/posts.json';
 
 export async function fetchPosts() {
-  const res = await fetch(POSTS_URL);
+  // Add a cache buster to prevent the browser from caching the old posts.json
+  const res = await fetch(POSTS_URL + '?v=' + new Date().getTime());
   if (!res.ok) throw new Error(`Failed to load posts: ${res.status}`);
   const data = await res.json();
   return Array.isArray(data) ? data : data.posts ?? [];
