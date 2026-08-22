@@ -1,9 +1,26 @@
 [
   {
+    "slug": "SemOz",
+    "title": "Scaling Local AI: Taming the Gemma Tokenizer for Massive Knowledge Graphs",
+    "date": "2026-08-22",
+    "tags": [
+      "Gemma",
+      "gen-ai",
+      "local-ai",
+      "cli",
+      "rag"
+    ],
+    "excerpt": "",
+    "file": "posts/2026-08-22-Local-AI-Agents.md"
+  },
+  {
     "slug": "hello-world",
     "title": "Hello World — Starting the Lab Notebook",
     "date": "2025-07-10",
-    "tags": ["meta", "machine-learning"],
+    "tags": [
+      "meta",
+      "machine-learning"
+    ],
     "excerpt": "Why I'm turning my portfolio into a living lab notebook and what you can expect to find here.",
     "file": "posts/2025-07-10-hello-world.md"
   }
