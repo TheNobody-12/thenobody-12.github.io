@@ -1,5 +1,18 @@
 [
   {
+    "slug": "semantic-organizer-v0.1",
+    "title": "Semantic Organizer v0.1.0: Bringing Local AI and Vectorless GraphRAG to Your Filesystem",
+    "date": "2026-08-23",
+    "tags": [
+      "cli",
+      "graph-rag",
+      "local-ai",
+      "open-source"
+    ],
+    "excerpt": "We're releasing Semantic Organizer v0.1.0—a local AI CLI tool that organizes your chaotic folders into a deterministic semantic knowledge graph without touching the cloud.",
+    "file": "posts/2026-08-23-Semantic-Organizer-v0.1.0.md"
+  },
+  {
     "slug": "SemOz",
     "title": "Scaling Local AI: Taming the Gemma Tokenizer for Massive Knowledge Graphs",
     "date": "2026-08-22",
