@@ -75,4 +75,4 @@ Here is what is coming in the next phases of Semantic Organizer:
 
 Semantic Organizer isn't just about cleaning up your Downloads folder anymore. It is about turning your local filesystem into an intelligent, queriable extension of your brain—without paying API subscriptions or giving up your data privacy. 
 
-Check out the code on GitHub and give it a spin!
+[Check out the code on GitHub and give it a spin!](https://github.com/TheNobody-12/semantic-organizer)
