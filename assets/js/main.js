@@ -119,7 +119,40 @@ async function initLatestPosts() {
       </article>
     `).join('');
   } catch (err) {
-    container.innerHTML = '<p class="muted">Could not load latest posts.</p>';
+    // Fallback if fetch fails (e.g., local file:// protocol)
+    const fallbackData = [
+      {
+        slug: "semantic-organizer-v0.1",
+        title: "Semantic Organizer v0.1.0: Bringing Local AI and Vectorless GraphRAG to Your Filesystem",
+        date: "2026-08-23",
+        tags: ["cli", "graph-rag", "local-ai", "open-source"],
+        excerpt: "We're releasing Semantic Organizer v0.1.0—a local AI CLI tool that organizes your chaotic folders into a deterministic semantic knowledge graph without touching the cloud."
+      },
+      {
+        slug: "SemOz",
+        title: "Scaling Local AI: Taming the Gemma Tokenizer for Massive Knowledge Graphs",
+        date: "2026-08-22",
+        tags: ["Gemma", "gen-ai", "local-ai", "cli", "rag"],
+        excerpt: ""
+      },
+      {
+        slug: "hello-world",
+        title: "Hello World — Starting the Lab Notebook",
+        date: "2025-07-10",
+        tags: ["meta", "machine-learning"],
+        excerpt: "Why I'm turning my portfolio into a living lab notebook and what you can expect to find here."
+      }
+    ];
+    container.innerHTML = fallbackData.map(post => `
+      <article class="card post-card">
+        <div>
+          <div class="post-meta"><time datetime="${escapeHtml(post.date)}">${formatDate(post.date)}</time></div>
+          <h2><a href="blog/post.html?slug=${encodeURIComponent(post.slug)}">${escapeHtml(post.title)}</a></h2>
+          <p class="muted">${escapeHtml(post.excerpt || '')}</p>
+        </div>
+        <div class="tags">${tagList(post.tags)}</div>
+      </article>
+    `).join('');
   }
 }
 

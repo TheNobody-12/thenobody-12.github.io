@@ -10,7 +10,7 @@
   <link rel="canonical" href="https://thenobody-12.github.io/" />
 
   <meta property="og:title" content="Sarthak Kapaliya – AI & Data Science Portfolio" />
-  <meta property="og:description" content="Projects in ML, NLP, CV, Knowledge Graphs, Forecasting, and production MLOps. View experience, skills, and publications." />
+  <meta property="og:description" content="Projects in ML, NLP, CV, Knowledge Graphs, Forecasting, and production MLOps." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thenobody-12.github.io/" />
   <meta property="og:image" content="https://thenobody-12.github.io/Sarthak_Profile.png" />
@@ -30,44 +30,33 @@
   }
   </script>
 
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="assets/css/animations.css" />
 </head>
 <body>
-  <div class="scroll-progress"><div class="scroll-progress__bar"></div></div>
   <a class="skip-link" href="#main-content">Skip to content</a>
-
-  <div class="topbar">
-    <div class="container">
-      <div class="contact-info">
-        <a href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
-      </div>
-    </div>
-  </div>
 
   <header class="header">
     <div class="container">
       <a class="logo" href="#home">Sarthak<span>.</span></a>
       <nav class="navbar" aria-label="Primary">
         <ul class="nav-links">
-          <li><a class="nav-link nav-anim active" href="#home">Home</a></li>
-          <li><a class="nav-link nav-anim" href="#about">About</a></li>
-          <li><a class="nav-link nav-anim" href="#work-experience">Work</a></li>
-          <li><a class="nav-link nav-anim" href="#projects">Projects</a></li>
-          <li><a class="nav-link nav-anim" href="#education">Education</a></li>
-          <li><a class="nav-link nav-anim" href="#skills">Skills</a></li>
-          <li><a class="nav-link nav-anim" href="#publications">Research</a></li>
-          <li><a class="nav-link nav-anim" href="blog/index.html">Blog</a></li>
-          <li><a class="nav-link nav-anim" href="#contact">Contact</a></li>
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#research">Research</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="blog/index.html">Blog</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><i class="bx bx-menu"></i></button>
       </nav>
@@ -75,441 +64,549 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero -->
+
+    <!-- ── Hero ── -->
     <section id="home" class="hero">
-      <video class="hero-video" src="home.mp4" autoplay loop muted playsinline></video>
-      <canvas class="constellation-canvas" data-constellation></canvas>
-      <div class="hero-overlay"></div>
       <div class="container hero-grid">
-        <div class="hero-copy" data-reveal data-reveal-delay="80">
-          <p class="eyebrow">AI & Data Science Professional</p>
-          <h1>I build <span class="gradient-text">production ML systems</span> — forecasting, knowledge graphs, and edge vision.</h1>
-          <p class="subtitle">From messy data to deployed models: I ship analytics, GenAI retrieval, and real-time computer vision.</p>
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">AI &amp; Data Science Professional</p>
+          <h1>I build <mark>production ML systems</mark> — forecasting, knowledge graphs, and edge vision.</h1>
+          <p class="subtitle">From messy data to deployed models: I ship analytics, GenAI retrieval, and real-time computer vision that works at scale.</p>
           <p class="type-line">
-            <span class="mono" style="color:#2dd4bf">&gt;</span>
+            <span class="mono">&gt;</span>
             <span data-typewriter='["Forecasting with ARIMA & Prophet.","Knowledge graphs for GenAI retrieval.","Computer vision at the edge.","MLOps that actually ships."]'></span>
           </p>
           <div class="hero-actions">
-            <a class="btn primary" href="#about">About Me</a>
-            <a class="btn ghost" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Download Resume</a>
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Resume ↗</a>
           </div>
-          <div class="hero-socials">
+          <div class="hero-meta">
+            <span>McMaster MEng '26</span>
+            <span class="sep">·</span>
+            <span>6 publications</span>
+            <span class="sep">·</span>
+            <span>Toronto, Canada</span>
+          </div>
+        </div>
+
+        <div class="terminal" data-reveal>
+          <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">mortality_forecast.py</span>
+          </div>
+          <pre class="terminal-body"><code><span class="tok-cm"># mortality_forecast.py</span>
+<span class="tok-kw">from</span> <span class="tok-im">prophet</span> <span class="tok-kw">import</span> Prophet
+<span class="tok-kw">import</span> <span class="tok-im">mlflow</span>
+
+model = Prophet(
+    seasonality_mode=<span class="tok-str">'multiplicative'</span>,
+    changepoint_prior_scale=<span class="tok-num">0.05</span>
+)
+model.fit(mortality_df)
+forecast = model.predict(future_df)
+
+mlflow.log_metric(<span class="tok-str">"MAPE"</span>, <span class="tok-num">0.085</span>)
+<span class="tok-cm"># → 15% MAPE improvement over baseline</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 01 About ── -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">01 / About</span>
+          <h2>Who I am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p><strong>Hi, I'm Sarthak Kapaliya.</strong> I'm an AI and Data Science professional focused on ML, NLP, computer vision, forecasting, and production-grade MLOps. I build systems that are explainable, reliable, and measurable — bridging the gap between research and real-world deployment.</p>
+            <p>Recently, I've shipped production workflows in insurance analytics (variance analysis, forecasting, knowledge graphs), edge AI for real-time vision, and GenAI-driven document intelligence for complex financial data.</p>
+            <div class="highlights">
+              <h3>Impact highlights</h3>
+              <ul class="checklist">
+                <li>Mortality experience analytics &amp; forecasting (ARIMA/Prophet) with MLflow and Power BI storytelling.</li>
+                <li>Real-time people counting on 200+ edge devices; Jetson Nano + DeepStream; DVC + MLflow for CV models.</li>
+                <li>Knowledge graph (Neo4j/Cypher) for GenAI retrieval, boosting chatbot accuracy by 35%.</li>
+                <li>LLM-enabled document intelligence; confidence routing + human-in-the-loop for noisy tax PDFs.</li>
+                <li>Multimodal AI mock-interview platform with speech-to-text + FER; validated with 40+ users.</li>
+              </ul>
+            </div>
+            <div class="about-actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn secondary" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Resume ↗</a>
+            </div>
+          </div>
+          <div class="about-sidebar" data-reveal>
+            <img src="Sarthak_Profile.png" alt="Sarthak Kapaliya" class="about-photo" />
+            <div class="about-links">
+              <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+              <a href="https://twitter.com/SarthakKapaliya" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="mailto:sarthakkapaliya@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 02 Experience ── -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">02 / Experience</span>
+          <h2>Work Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date"><span class="pill">May – Dec 2025</span></div>
+            <div class="timeline-body">
+              <h3>Data Science Intern (Group Function AI)</h3>
+              <p class="muted">Manulife Insurance · Toronto, Canada</p>
+              <ul class="checklist">
+                <li>Automated mortality experience variance/trend analysis with SQL &amp; PySpark; reduced manual workflows by 40% via Power BI + AI narratives.</li>
+                <li>Built ARIMA &amp; Prophet cashflow forecasts, improving MAPE by 15% for proactive financial decisions.</li>
+                <li>Production ML with MLflow for experiment tracking, reproducibility, and CI/CD-aligned deployments.</li>
+                <li>Engineered Neo4j treaty knowledge graph and multi-hop reasoning to support GenAI retrieval; improved chatbot accuracy by 35%.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date"><span class="pill">Jan – Aug 2024</span></div>
+            <div class="timeline-body">
+              <h3>AI Trainee</h3>
+              <p class="muted">Buze Platforms Private Limited · Ahmedabad, India</p>
+              <ul class="checklist">
+                <li>Election monitoring with real-time people counting; managed 200 AWS Linux servers with edge AI cameras; +60% accuracy.</li>
+                <li>Real-time human detection on Jetson Nano + DeepStream; +50% processing efficiency.</li>
+                <li>Helmet violation detection (transformer-based) on AWS EC2 with DVC + MLflow; +55% speed, +30% accuracy.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date"><span class="pill">Jun – Aug 2023</span></div>
+            <div class="timeline-body">
+              <h3>Data Science Intern</h3>
+              <p class="muted">Techdome Solutions Private Limited · Bhopal, India</p>
+              <ul class="checklist">
+                <li>Chat toxicity analyzer boosting interaction by 25% (hate/obscenity detection).</li>
+                <li>Topic-model recommendation engine improving UX by 30% through user-interest clustering.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date"><span class="pill">May – Jul 2023</span></div>
+            <div class="timeline-body">
+              <h3>Research Intern</h3>
+              <p class="muted">Indian Meteorological Department · Bhopal, India</p>
+              <ul class="checklist">
+                <li>Advanced ML on Doppler radar data; improved lightning detection accuracy by 20%.</li>
+                <li>Enabled early weather warnings through better thunderstorm visualization.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date"><span class="pill">Jun – Jul 2023</span></div>
+            <div class="timeline-body">
+              <h3>Project Trainee</h3>
+              <p class="muted">Neurapses Technology · Pune, India</p>
+              <ul class="checklist">
+                <li>Generative AI for MongoDB query synthesis to boost developer productivity.</li>
+                <li>Visualization layer for automated query insights.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-date"><span class="pill">May – Jul 2022</span></div>
+            <div class="timeline-body">
+              <h3>Project Trainee</h3>
+              <p class="muted">Semiconductor Laboratory (MeitY) · Chandigarh, India</p>
+              <ul class="checklist">
+                <li>Computer vision surveillance to classify 7 vehicle types; persisted counts for analytics.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 03 Projects ── -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">03 / Projects</span>
+          <h2>Featured Work</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-screenshot">
+              <div style="width: 100%; height: 100%; background: var(--surface); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm);">
+                <i class='bx bx-file-blank' style="font-size: 2.5rem; color: var(--accent);"></i>
+                <div style="width: 60%; height: 4px; background: var(--border-strong); border-radius: 2px;"></div>
+                <div style="width: 40%; height: 4px; background: var(--border-strong); border-radius: 2px;"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <h3>Intelligent Tax Document Extraction System</h3>
+                <span class="pill">2025</span>
+              </div>
+              <div class="tags">
+                <span class="tag">Azure Document Intelligence</span>
+                <span class="tag">LLM prompts</span>
+                <span class="tag">HITL</span>
+              </div>
+              <p>Noisy, multi-format tax PDF processing with confidence routing and human-in-the-loop; <strong>cut manual review time by 80%</strong>.</p>
+              <div class="project-links">
+                <a href="https://github.com/TheNobody-12" target="_blank">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-screenshot">
+              <div style="width: 100%; height: 100%; background: var(--surface); display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm);">
+                <div style="display: flex; align-items: center; gap: 6px;">
+                  <div style="width: 8px; height: 24px; background: var(--accent); border-radius: 4px;"></div>
+                  <div style="width: 8px; height: 12px; background: var(--accent); border-radius: 4px; opacity: 0.5;"></div>
+                  <div style="width: 8px; height: 32px; background: var(--accent); border-radius: 4px;"></div>
+                  <div style="width: 8px; height: 16px; background: var(--accent); border-radius: 4px; opacity: 0.8;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <h3>AI-Powered Mock Interview Platform</h3>
+                <span class="pill">2025</span>
+              </div>
+              <div class="tags">
+                <span class="tag">LLMs</span>
+                <span class="tag">STT</span>
+                <span class="tag">FER</span>
+                <span class="tag">UX Research</span>
+              </div>
+              <p>Multimodal system giving real-time feedback; 40+ user study showed <strong>25% improvement in response quality</strong>.</p>
+              <div class="project-links">
+                <a href="https://github.com/TheNobody-12" target="_blank">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-screenshot">
+              <div style="width: 100%; height: 100%; background: var(--surface); display: flex; align-items: center; justify-content: center; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm);">
+                <div style="position: relative; width: 60px; height: 60px; border: 2px solid var(--accent); border-radius: 8px;">
+                  <div style="position: absolute; top: 10px; left: 10px; width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
+                  <div style="position: absolute; bottom: 15px; right: 15px; width: 20px; height: 20px; border: 2px solid var(--accent); border-radius: 2px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <h3>Plastic Waste Detection</h3>
+                <span class="pill">Jun – Sep 2023</span>
+              </div>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Roboflow</span>
+                <span class="tag">Ultralytics</span>
+              </div>
+              <p>End-to-end detection pipeline for plastic waste with hosted inference.</p>
+              <div class="project-links">
+                <a href="https://github.com/TheNobody-12" target="_blank">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-screenshot">
+              <div style="width: 100%; height: 100%; background: var(--surface); display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm);">
+                <div style="width: 30px; height: 30px; background: var(--accent); border-radius: 50%; opacity: 0.8;"></div>
+                <div style="width: 15px; height: 2px; background: var(--border-strong);"></div>
+                <div style="width: 20px; height: 20px; background: var(--accent); border-radius: 50%; opacity: 0.5;"></div>
+                <div style="width: 15px; height: 2px; background: var(--border-strong);"></div>
+                <div style="width: 25px; height: 25px; background: var(--accent); border-radius: 50%; opacity: 0.6;"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <h3>Song Recommendation Engine</h3>
+                <span class="pill">Apr – May 2023</span>
+              </div>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">NLTK</span>
+                <span class="tag">ML</span>
+              </div>
+              <p>NLP + topic modeling to personalize music discovery.</p>
+              <div class="project-links">
+                <a href="https://github.com/TheNobody-12" target="_blank">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-header archive-header" data-reveal>
+          <span class="section-label">Archive</span>
+          <h2>More Work</h2>
+        </div>
+        <div class="archive-list" data-reveal>
+          <article class="archive-item">
+            <div>
+              <h3>OCR Web Portal</h3>
+              <p class="muted">Flask · Azure · JS · Oct – Dec 2022</p>
+            </div>
+          </article>
+          <article class="archive-item">
+            <div>
+              <h3>PRINTF — Printing Service Web Portal</h3>
+              <p class="muted">Node.js · Firebase · React · Twilio · Feb – Mar 2023</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 04 Education ── -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">04 / Education</span>
+          <h2>Academics</h2>
+        </div>
+        <div class="education-grid">
+          <article class="card" data-reveal>
+            <div class="card-top">
+              <h3>Master of Engineering, Computing and Software</h3>
+              <span class="pill">Sep 2024 – Apr 2026</span>
+            </div>
+            <p class="muted">McMaster University · Hamilton, Ontario, Canada</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card-top">
+              <h3>Bachelor of Technology, Computer Engineering</h3>
+              <span class="pill">Nov 2020 – Jun 2024</span>
+            </div>
+            <p class="muted">Pandit Deendayal Energy University · India</p>
+          </article>
+        </div>
+
+        <div class="leadership-grid" data-reveal>
+          <div class="leadership-item">
+            <h4>Student Placement Coordinator</h4>
+            <p>Career Development Cell, PDEU · 2023</p>
+          </div>
+          <div class="leadership-item">
+            <h4>AI/ML Core Member</h4>
+            <p>Encode: CSE Club of PDEU · 2022 – 2023</p>
+          </div>
+          <div class="leadership-item">
+            <h4>Public Relation Head</h4>
+            <p>IEEE Student Chapter, PDEU · 2021 – 2023</p>
+          </div>
+          <div class="leadership-item">
+            <h4>Social Media Head</h4>
+            <p>Civiqueniti, Public Admin Club · 2022 – 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 05 Research ── -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">05 / Research</span>
+          <h2>Publications</h2>
+        </div>
+        <div class="pub-list">
+          <article class="pub-item" data-reveal>
+            <p><a href="https://doi.org/10.1109/iSSSC56467.2022.10051313" target="_blank">Efficient Deep Learning Based Vehicle Classification System for Indian Vehicle</a></p>
+            <span class="pub-status">Conference · Published</span>
+          </article>
+          <article class="pub-item" data-reveal>
+            <p>Facial Emotion Recognition With Deep Neural Network</p>
+            <span class="pub-status">Journal · Accepted</span>
+          </article>
+          <article class="pub-item" data-reveal>
+            <p>AI Enabled Ozone Forecasting Model using DNN for Indian Air Quality Data</p>
+            <span class="pub-status">Journal · In Review</span>
+          </article>
+          <article class="pub-item" data-reveal>
+            <p>Water Quality Prediction Using Machine Learning</p>
+            <span class="pub-status">Journal · In Review</span>
+          </article>
+          <article class="pub-item" data-reveal>
+            <p>An Intelligent Classification of Human Protein-Coding Genes: An AI-Driven Approach</p>
+            <span class="pub-status">Journal · In Review</span>
+          </article>
+          <article class="pub-item" data-reveal>
+            <p>Advancement in Efficient Approaches for Detection of Prevalent Phishing Attacks</p>
+            <span class="pub-status">Journal · In Review</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 06 Skills & Certifications ── -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">06 / Toolkit</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-grid" data-reveal>
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>Java</span>
+              <span>R</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>ML / DL</h3>
+            <div class="skill-tags">
+              <span>PyTorch</span>
+              <span>TensorFlow</span>
+              <span>scikit-learn</span>
+              <span>Prophet</span>
+              <span>ARIMA</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Data</h3>
+            <div class="skill-tags">
+              <span>Pandas</span>
+              <span>NumPy</span>
+              <span>PySpark</span>
+              <span>Neo4j</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>MLOps</h3>
+            <div class="skill-tags">
+              <span>MLflow</span>
+              <span>DVC</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Cloud</h3>
+            <div class="skill-tags">
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>GCP</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend & DB</h3>
+            <div class="skill-tags">
+              <span>FastAPI</span>
+              <span>MongoDB</span>
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>Linux</span>
+              <span>Anaconda</span>
+              <span>VS Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs-section" data-reveal>
+          <h3>Certifications</h3>
+          <div class="certs-list">
+            <div class="cert-item">
+              <span>Nanodegree in AI Programming with Python</span>
+              <span class="cert-org">Udacity</span>
+            </div>
+            <div class="cert-item">
+              <span>Certified Azure AI Fundamentals</span>
+              <span class="cert-org">Microsoft</span>
+            </div>
+            <div class="cert-item">
+              <span>Fundamentals of Deep Learning · AI for Predictive Maintenance · Transformer-based NLP</span>
+              <span class="cert-org">NVIDIA</span>
+            </div>
+            <div class="cert-item">
+              <span>Deep Learning</span>
+              <span class="cert-org">NPTEL IIT Kharagpur</span>
+            </div>
+            <div class="cert-item">
+              <span>Data Analytics · Introduction to Data Science · Data Science Tools</span>
+              <span class="cert-org">IBM</span>
+            </div>
+            <div class="cert-item">
+              <span>Geoprocessing With Python</span>
+              <span class="cert-org">ISRO</span>
+            </div>
+            <div class="cert-item">
+              <span>Machine Learning for Data Science and Analytics</span>
+              <span class="cert-org">Columbia / edX</span>
+            </div>
+            <div class="cert-item">
+              <span>Complete ML &amp; Data Science with Python</span>
+              <span class="cert-org">Udemy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 07 Writing ── -->
+    <section id="writing" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div class="section-header-row">
+            <div>
+              <span class="section-label">07 / Lab notebook</span>
+              <h2>Latest Writing</h2>
+            </div>
+            <a class="btn secondary" href="blog/index.html">View all posts</a>
+          </div>
+        </div>
+        <div id="latest-posts-grid" class="latest-posts-grid" data-reveal>
+          <p class="muted">Loading latest posts…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 08 Contact ── -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-label">08 / Contact</span>
+          <h2>Let's build something</h2>
+        </div>
+        <div class="card contact-card" data-reveal>
+          <div>
+            <p class="muted">Email</p>
+            <a class="contact-link" href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
+          </div>
+          <div class="contact-socials">
             <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
             <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
             <a href="https://twitter.com/SarthakKapaliya" target="_blank" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
           </div>
-        </div>
-
-        <div class="hero-card" data-reveal data-reveal-delay="160">
-          <div class="avatar-wrap">
-            <img src="Sarthak_Profile.png" alt="Sarthak Kapaliya" class="avatar" />
-          </div>
-          <div class="hero-card-body">
-            <h3>Sarthak Kapaliya</h3>
-            <p>AI, Data Science, MLOps, Forecasting, Knowledge Graphs.</p>
-            <div class="stats">
-              <div><span class="label">Experience</span><strong><span data-count="5" data-suffix="+">0</span> roles</strong></div>
-              <div><span class="label">Projects</span><strong><span data-count="6" data-suffix="+">0</span></strong></div>
-              <div><span class="label">Publications</span><strong><span data-count="6">0</span></strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Who I am</h2>
-        </div>
-      </div>
-      <div class="container bento about-grid">
-        <article class="card spotlight" data-reveal>
-          <p class="lead"><strong>Hi 👋! I'm Sarthak Kapaliya.</strong></p>
-          <p>I am an AI and Data Science professional focused on ML, NLP, computer vision, forecasting, and production-grade MLOps. I enjoy building systems that are explainable, reliable, and measurable. My work bridges the gap between research and real-world deployment.</p>
-          <p>Recently, I’ve shipped production workflows in insurance analytics (variance analysis, forecasting, knowledge graphs), edge AI for real-time vision, and GenAI-driven document intelligence for complex financial data.</p>
-          <div class="about-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn ghost" href="https://drive.google.com/file/d/1ArHPqzd8DRredKZpBbGWiN7aqfDtEJc4/view?usp=sharing" target="_blank">Resume</a>
-          </div>
-        </article>
-
-        <article class="card spotlight" data-reveal>
-          <div class="card-top">
-            <h3>Highlights</h3>
-            <span class="pill">Impact</span>
-          </div>
-          <ul class="checklist">
-            <li>Mortality experience analytics & forecasting (ARIMA/Prophet) with MLflow and Power BI storytelling.</li>
-            <li>Real-time people counting on 200+ edge devices; Jetson Nano + DeepStream; DVC + MLflow for CV models.</li>
-            <li>Knowledge graph (Neo4j/Cypher) for GenAI retrieval, boosting chatbot accuracy by 35%.</li>
-            <li>LLM-enabled document intelligence; confidence routing + human-in-the-loop for noisy tax PDFs.</li>
-            <li>Multimodal AI mock-interview platform with speech-to-text + FER; validated with 40+ users.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section id="work-experience" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Experience</p>
-          <h2>Work Experience</h2>
-        </div>
-      </div>
-      <div class="container timeline">
-        <article class="timeline-item" data-reveal>
-          <div class="timeline-date"><span class="pill">May 2025 – Dec 2025</span></div>
-          <div class="timeline-body">
-            <h3>Data Science Intern (Group Function AI)</h3>
-            <p class="muted">Manulife Insurance · Toronto, Canada</p>
-            <ul class="checklist">
-              <li>Automated mortality experience variance/trend analysis with SQL & PySpark; reduced manual workflows by 40% via Power BI + AI narratives.</li>
-              <li>Built ARIMA & Prophet cashflow forecasts, improving MAPE by 15% for proactive financial decisions.</li>
-              <li>Production ML with MLflow for experiment tracking, reproducibility, and CI/CD-aligned deployments.</li>
-              <li>Engineered Neo4j treaty knowledge graph and multi-hop reasoning to support GenAI retrieval; improved chatbot accuracy by 35%.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item" data-reveal>
-          <div class="timeline-date"><span class="pill">Jan 2024 – Aug 2024</span></div>
-          <div class="timeline-body">
-            <h3>AI Trainee</h3>
-            <p class="muted">Buze Platforms Private Limited · Ahmedabad, India</p>
-            <ul class="checklist">
-              <li>Election monitoring with real-time people counting; managed 200 AWS Linux servers with edge AI cameras; +60% accuracy.</li>
-              <li>Real-time human detection on Jetson Nano + DeepStream; +50% processing efficiency.</li>
-              <li>Helmet violation detection (transformer-based) on AWS EC2 with DVC + MLflow; +55% speed, +30% accuracy.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item" data-reveal>
-          <div class="timeline-date"><span class="pill">Jun 2023 – Aug 2023</span></div>
-          <div class="timeline-body">
-            <h3>Data Science Intern</h3>
-            <p class="muted">Techdome Solutions Private Limited · Bhopal, India</p>
-            <ul class="checklist">
-              <li>Chat toxicity analyzer boosting interaction by 25% (hate/obscenity detection).</li>
-              <li>Topic-model recommendation engine improving UX by 30% through user-interest clustering.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item" data-reveal>
-          <div class="timeline-date"><span class="pill">May 2023 – Jul 2023</span></div>
-          <div class="timeline-body">
-            <h3>Research Intern</h3>
-            <p class="muted">Indian Meteorological Department · Bhopal, India</p>
-            <ul class="checklist">
-              <li>Advanced ML on Doppler radar data; improved lightning detection accuracy by 20%.</li>
-              <li>Enabled early weather warnings through better thunderstorm visualization.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item" data-reveal>
-          <div class="timeline-date"><span class="pill">Jun 2023 – Jul 2023</span></div>
-          <div class="timeline-body">
-            <h3>Project Trainee</h3>
-            <p class="muted">Neurapses Technology · Pune, India</p>
-            <ul class="checklist">
-              <li>Generative AI for MongoDB query synthesis to boost developer productivity.</li>
-              <li>Visualization layer for automated query insights.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item" data-reveal>
-          <div class="timeline-date"><span class="pill">May 2022 – Jul 2022</span></div>
-          <div class="timeline-body">
-            <h3>Project Trainee</h3>
-            <p class="muted">Semiconductor Laboratory (MeitY) · Chandigarh, India</p>
-            <ul class="checklist">
-              <li>Computer vision surveillance to classify 7 vehicle types; persisted counts for analytics.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Projects</p>
-          <h2>Featured Work</h2>
-        </div>
-      </div>
-
-      <div class="container project-grid">
-        <article class="project-card spotlight" data-reveal>
-          <div class="project-thumb" aria-hidden="true">
-            <div class="thumb-shape shape-doc"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <h3>Intelligent Tax Document Extraction System</h3>
-              <span class="pill">2025</span>
-            </div>
-            <div class="tags">
-              <span class="tag">Azure Document Intelligence</span>
-              <span class="tag">LLM prompts</span>
-              <span class="tag">HITL</span>
-            </div>
-            <p>Noisy, multi-format tax PDF processing with confidence routing and human-in-the-loop; cut manual review time by 80%.</p>
-          </div>
-        </article>
-
-        <article class="project-card spotlight" data-reveal>
-          <div class="project-thumb" aria-hidden="true">
-            <div class="thumb-shape shape-interview"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <h3>AI-Powered Mock Interview Platform</h3>
-              <span class="pill">2025</span>
-            </div>
-            <div class="tags">
-              <span class="tag">LLMs</span>
-              <span class="tag">STT</span>
-              <span class="tag">FER</span>
-              <span class="tag">UX Research</span>
-            </div>
-            <p>Multimodal system giving real-time feedback; 40+ user study showed 25% improvement in response quality.</p>
-          </div>
-        </article>
-
-        <article class="project-card spotlight" data-reveal>
-          <div class="project-thumb" aria-hidden="true">
-            <div class="thumb-shape shape-waste"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <h3>Plastic Waste Detection</h3>
-              <span class="pill">Jun – Sep 2023</span>
-            </div>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Flask</span>
-              <span class="tag">Roboflow</span>
-              <span class="tag">Ultralytics</span>
-            </div>
-            <p>End-to-end detection pipeline for plastic waste with hosted inference.</p>
-          </div>
-        </article>
-
-        <article class="project-card spotlight" data-reveal>
-          <div class="project-thumb" aria-hidden="true">
-            <div class="thumb-shape shape-music"></div>
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <h3>Song Recommendation Engine</h3>
-              <span class="pill">Apr – May 2023</span>
-            </div>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">Flask</span>
-              <span class="tag">NLTK</span>
-              <span class="tag">ML</span>
-            </div>
-            <p>NLP + topic modeling to personalize music discovery.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="container section-header" data-reveal style="margin-top:60px;">
-        <div>
-          <p class="eyebrow">Archive</p>
-          <h2>More Work</h2>
-        </div>
-      </div>
-      <div class="container archive-list" data-reveal>
-        <article class="archive-item spotlight">
-          <div>
-            <h3>OCR Web Portal</h3>
-            <p class="muted">Flask · Azure · JS · Oct – Dec 2022</p>
-          </div>
-        </article>
-        <article class="archive-item spotlight">
-          <div>
-            <h3>PRINTF — Printing Service Web Portal</h3>
-            <p class="muted">Node.js · Firebase · React · Twilio · Feb – Mar 2023</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Academics</p>
-          <h2>Education</h2>
-        </div>
-      </div>
-      <div class="container bento bento-2">
-        <article class="card spotlight" data-reveal>
-          <div class="card-top">
-            <h3>Master of Engineering, Computing and Software</h3>
-            <span class="pill">Sep 2024 – Apr 2026</span>
-          </div>
-          <p class="muted">McMaster University · Hamilton, Ontario, Canada</p>
-        </article>
-
-        <article class="card spotlight" data-reveal>
-          <div class="card-top">
-            <h3>Bachelor of Technology, Computer Engineering</h3>
-            <span class="pill">Nov 2020 – Jun 2024</span>
-          </div>
-          <p class="muted">Pandit Deendayal Energy University · India</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Responsibilities -->
-    <section id="responsibilities" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Leadership</p>
-          <h2>Positions of Responsibility</h2>
-        </div>
-      </div>
-      <div class="container card-grid">
-        <article class="card spotlight" data-reveal>
-          <h3>Student Placement Coordinator</h3>
-          <p class="muted">Career Development Cell, PDEU | Jan 2023 - Present</p>
-        </article>
-
-        <article class="card spotlight" data-reveal>
-          <h3>AI/ML Core Member</h3>
-          <p class="muted">Encode: CSE Club of PDEU | Nov 2022 - May 2023</p>
-        </article>
-
-        <article class="card spotlight" data-reveal>
-          <h3>Public Relation Head</h3>
-          <p class="muted">IEEE Student Chapter, PDEU | Jul 2021 - May 2023</p>
-        </article>
-
-        <article class="card spotlight" data-reveal>
-          <h3>Social Media Head</h3>
-          <p class="muted">Civiqueniti, Public Administration Club of PDEU | Jul 2022 - May 2023</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Research</p>
-          <h2>Publications</h2>
-        </div>
-      </div>
-      <div class="container bento list-grid">
-        <article class="card spotlight" data-reveal>
-          <p><a href="https://doi.org/10.1109/iSSSC56467.2022.10051313" target="_blank">(Conference) Efficient Deep Learning Based Vehicle Classification System for Indian Vehicle</a></p>
-        </article>
-        <article class="card spotlight" data-reveal><p>(Journal) Facial Emotion Recognition With Deep Neural Network - Accepted</p></article>
-        <article class="card spotlight" data-reveal><p>(Journal) AI Enabled Ozone Forecasting Model using DNN for Indian Air Quality Data - In Review</p></article>
-        <article class="card spotlight" data-reveal><p>(Journal) Water Quality Prediction Using Machine Learning - In Review</p></article>
-        <article class="card spotlight" data-reveal><p>(Journal) An Intelligent Classification of Human Protein-Coding Genes: An AI-Driven Approach - In Review</p></article>
-        <article class="card spotlight" data-reveal><p>(Journal) Advancement in Efficient Approaches for Detection of Prevalent Phishing Attacks - In Review</p></article>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Toolkit</p>
-          <h2>Skills</h2>
-        </div>
-      </div>
-      <div class="container card spotlight" data-reveal>
-        <div class="bento skills-bento">
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=py" alt="Python" /><span>Python</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=java" alt="Java" /><span>Java</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=r" alt="R" /><span>R</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" /><span>MySQL</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=pytorch" alt="PyTorch" /><span>PyTorch</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=tensorflow" alt="TensorFlow" /><span>TensorFlow</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=sklearn" alt="scikit-learn" /><span>scikit-learn</span></div>
-          <div class="skill-item"><img src="https://cdn.simpleicons.org/pandas/3776AB" alt="Pandas" /><span>Pandas</span></div>
-          <div class="skill-item"><img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" /><span>NumPy</span></div>
-          <div class="skill-item"><img src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="PySpark" /><span>PySpark</span></div>
-          <div class="skill-item"><img src="https://cdn.simpleicons.org/mlflow/0194E2" alt="MLflow" /><span>MLflow</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=anaconda" alt="Anaconda" /><span>Anaconda</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" /><span>FastAPI</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" /><span>MongoDB</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /><span>PostgreSQL</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=docker" alt="Docker" /><span>Docker</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" /><span>Kubernetes</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=aws" alt="AWS" /><span>AWS</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=azure" alt="Azure" /><span>Azure</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=gcp" alt="GCP" /><span>GCP</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" /><span>VS Code</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=git" alt="Git" /><span>Git</span></div>
-          <div class="skill-item"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /><span>Linux</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Certifications</p>
-          <h2>Creds</h2>
-        </div>
-      </div>
-      <div class="container bento list-grid">
-        <article class="card spotlight" data-reveal><p>Udacity: Nanodegree in AI Programming with Python (Valid until: Dec 2026)</p></article>
-        <article class="card spotlight" data-reveal><p>Microsoft: Certified Azure AI Fundamentals (Valid until: Nov 2026)</p></article>
-        <article class="card spotlight" data-reveal><p>NVIDIA: Fundamentals of Deep Learning; AI for Predictive Maintenance; Transformer-based NLP Apps (Valid until: Oct 2026)</p></article>
-        <article class="card spotlight" data-reveal><p>NPTEL IIT Kharagpur: Deep Learning</p></article>
-        <article class="card spotlight" data-reveal><p>IBM: Data Analytics Internship at CSRBox; Introduction to Data Science; Data Science Tools</p></article>
-        <article class="card spotlight" data-reveal><p>ISRO: Geoprocessing With Python Certification</p></article>
-        <article class="card spotlight" data-reveal><p>Columbia University (edX): Machine Learning for Data Science and Analytics</p></article>
-        <article class="card spotlight" data-reveal><p>Udemy: Complete ML & Data Science with Python; Python for Beginners (2022)</p></article>
-      </div>
-    </section>
-
-    <!-- Latest Writing -->
-    <section id="writing" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Lab notebook</p>
-          <h2>Latest Writing</h2>
-        </div>
-        <a class="btn ghost" href="blog/index.html">View all posts</a>
-      </div>
-      <div id="latest-posts-grid" class="container latest-posts-grid" data-reveal>
-        <p class="muted">Loading latest posts…</p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="container section-header" data-reveal>
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build something</h2>
-        </div>
-      </div>
-      <div class="container card spotlight contact-card" data-reveal>
-        <div>
-          <p class="muted">Email</p>
-          <a class="contact-link" href="mailto:sarthakkapaliya@gmail.com">sarthakkapaliya@gmail.com</a>
-        </div>
-        <div class="contact-socials">
-          <a href="https://www.linkedin.com/in/sarthakkapaliya" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/TheNobody-12" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
         </div>
       </div>
     </section>
@@ -518,7 +615,7 @@
   <footer class="footer">
     <div class="container">
       <div>
-        <p>© 2025 Sarthak Kapaliya. All rights reserved.</p>
+        <p>© 2026 Sarthak Kapaliya. All rights reserved.</p>
         <p class="muted">Every second that ticks by, the future is running out.</p>
       </div>
       <div class="social-links">
