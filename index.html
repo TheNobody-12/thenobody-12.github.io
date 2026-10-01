@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sarthak Kapaliya – GenAI & Agentic AI Engineer</title>
+  <title>Sarthak Kapaliya – AI & Data Science Portfolio</title>
 
-  <meta name="description" content="Portfolio of Sarthak Kapaliya – GenAI Developer & Agentic AI Engineer: Multi-Agent Orchestration, RAG, LangGraph, Knowledge Graphs, Computer Vision, and production MLOps." />
-  <meta name="keywords" content="Sarthak Kapaliya, GenAI, Agentic AI, LangGraph, RAG, Multi-Agent, MCP, LLM, Knowledge Graph, Computer Vision, MLOps, Python, PyTorch, Neo4j, CrewAI" />
+  <meta name="description" content="Portfolio of Sarthak Kapaliya – AI & Data Science professional: ML, NLP, Computer Vision, Knowledge Graphs, Forecasting, and production MLOps." />
+  <meta name="keywords" content="Sarthak Kapaliya, AI, Data Science, Machine Learning, NLP, Computer Vision, Knowledge Graph, MLOps, Portfolio, Python, PyTorch, TensorFlow, Prophet, ARIMA, Neo4j" />
   <link rel="canonical" href="https://thenobody-12.github.io/" />
 
-  <meta property="og:title" content="Sarthak Kapaliya – GenAI & Agentic AI Engineer" />
-  <meta property="og:description" content="Multi-Agent Orchestration, Agentic RAG, LangGraph, Knowledge Graphs, Computer Vision, and production MLOps." />
+  <meta property="og:title" content="Sarthak Kapaliya – AI & Data Science Portfolio" />
+  <meta property="og:description" content="Projects in ML, NLP, CV, Knowledge Graphs, Forecasting, and production MLOps." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thenobody-12.github.io/" />
   <meta property="og:image" content="https://thenobody-12.github.io/Sarthak_Profile.png" />
@@ -20,7 +20,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Sarthak Kapaliya",
-    "jobTitle": "GenAI Developer & Agentic AI Engineer",
+    "jobTitle": "AI & Data Science Professional",
     "email": "mailto:sarthakkapaliya@gmail.com",
     "url": "https://thenobody-12.github.io",
     "sameAs": [
@@ -67,26 +67,48 @@
 
     <!-- ── Hero ── -->
     <section id="home" class="hero">
-      <div class="container hero-content">
+      <div class="container hero-grid">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">AI & Data Science Engineer</p>
-          <h1>Hi, I'm <mark>Sarthak Kapaliya</mark>.</h1>
-          <p class="subtitle">I build autonomous AI agents, multi-agent orchestration platforms, RAG pipelines, and production ML.</p>
+          <p class="eyebrow">AI &amp; Data Science Professional</p>
+          <h1>I build <mark>production ML systems</mark> — forecasting, knowledge graphs, and edge vision.</h1>
+          <p class="subtitle">From messy data to deployed models: I ship analytics, GenAI retrieval, and real-time computer vision that works at scale.</p>
           <p class="type-line">
             <span class="mono">&gt;</span>
-            <span data-typewriter='["Multi-agent orchestration with LangGraph.","Agentic RAG for enterprise knowledge.","Mainframe-to-cloud automation at RBC.","Knowledge graphs for GenAI retrieval.","Computer vision at the edge."]'></span>
+            <span data-typewriter='["Forecasting with ARIMA & Prophet.","Knowledge graphs for GenAI retrieval.","Computer vision at the edge.","MLOps that actually ships."]'></span>
           </p>
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View Projects</a>
             <a class="btn secondary" href="https://drive.google.com/file/d/1N-kis4zjro-TPPCnV37cMn0PDR2TvCFg/view?usp=sharing" target="_blank">Resume ↗</a>
           </div>
           <div class="hero-meta">
-            <span>McMaster MEng '26 · GPA 3.8/4.0</span>
+            <span>McMaster MEng '26</span>
             <span class="sep">·</span>
-            <span>AI Engineer @ TCS</span>
+            <span>6 publications</span>
             <span class="sep">·</span>
             <span>Toronto, Canada</span>
           </div>
+        </div>
+
+        <div class="terminal" data-reveal>
+          <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">mortality_forecast.py</span>
+          </div>
+          <pre class="terminal-body"><code><span class="tok-cm"># mortality_forecast.py</span>
+<span class="tok-kw">from</span> <span class="tok-im">prophet</span> <span class="tok-kw">import</span> Prophet
+<span class="tok-kw">import</span> <span class="tok-im">mlflow</span>
+
+model = Prophet(
+    seasonality_mode=<span class="tok-str">'multiplicative'</span>,
+    changepoint_prior_scale=<span class="tok-num">0.05</span>
+)
+model.fit(mortality_df)
+forecast = model.predict(future_df)
+
+mlflow.log_metric(<span class="tok-str">"MAPE"</span>, <span class="tok-num">0.085</span>)
+<span class="tok-cm"># → 15% MAPE improvement over baseline</span></code></pre>
         </div>
       </div>
     </section>
@@ -100,16 +122,16 @@
         </div>
         <div class="about-grid">
           <div class="about-text" data-reveal>
-            <p><strong>Hi, I'm Sarthak Kapaliya.</strong> I'm an AI & Data Science Engineer currently at TCS, building advanced machine learning solutions and scalable data science workflows. I specialize in autonomous agent systems, RAG pipelines, knowledge graphs, and production MLOps.</p>
-            <p>My journey started with building an Arduino railway crossing system in high school, evolved through ISRO research and edge AI deployments across 200+ cameras, and now focuses on the cutting edge of LangGraph, CrewAI, and MCP-based agent architectures at enterprise scale.</p>
+            <p><strong>Hi, I'm Sarthak Kapaliya.</strong> I'm an AI and Data Science professional focused on ML, NLP, computer vision, forecasting, and production-grade MLOps. I build systems that are explainable, reliable, and measurable — bridging the gap between research and real-world deployment.</p>
+            <p>Recently, I've shipped production workflows in insurance analytics (variance analysis, forecasting, knowledge graphs), edge AI for real-time vision, and GenAI-driven document intelligence for complex financial data.</p>
             <div class="highlights">
               <h3>Impact highlights</h3>
               <ul class="checklist">
-                <li>Advanced multi-agent orchestration platforms, reducing workflow turnaround by 50%.</li>
-                <li>Agentic RAG with LangGraph + Neo4j knowledge graphs, boosting retrieval accuracy by 35%.</li>
-                <li>Mortality forecasting (ARIMA/Prophet) at Manulife, improving MAPE by 15%.</li>
-                <li>Real-time people counting on 200+ edge cameras; Jetson Nano + DeepStream.</li>
-                <li>6 research publications in CV, NLP, and environmental AI.</li>
+                <li>Mortality experience analytics &amp; forecasting (ARIMA/Prophet) with MLflow and Power BI storytelling.</li>
+                <li>Real-time people counting on 200+ edge devices; Jetson Nano + DeepStream; DVC + MLflow for CV models.</li>
+                <li>Knowledge graph (Neo4j/Cypher) for GenAI retrieval, boosting chatbot accuracy by 35%.</li>
+                <li>LLM-enabled document intelligence; confidence routing + human-in-the-loop for noisy tax PDFs.</li>
+                <li>Multimodal AI mock-interview platform with speech-to-text + FER; validated with 40+ users.</li>
               </ul>
             </div>
             <div class="about-actions">
@@ -138,20 +160,6 @@
           <h2>Work Experience</h2>
         </div>
         <div class="timeline">
-          <article class="timeline-item" data-reveal>
-            <div class="timeline-date"><span class="pill pill-current">Jan 2026 – Present</span></div>
-            <div class="timeline-body">
-              <h3>AI Engineer</h3>
-              <p class="muted">Tata Consultancy Services · Toronto, Canada</p>
-              <ul class="checklist">
-                <li>Building scalable data science workflows and multi-agent orchestration platforms using LangGraph, CrewAI, and AutoGen.</li>
-                <li>Agentic RAG pipeline with semantic chunking + hybrid retrieval, reducing turnaround by 50%.</li>
-                <li>MCP-based tool integration and A2A protocol for inter-agent communication.</li>
-                <li>Integrated human-in-the-loop validation with confidence routing for production code generation.</li>
-              </ul>
-            </div>
-          </article>
-
           <article class="timeline-item" data-reveal>
             <div class="timeline-date"><span class="pill">May – Dec 2025</span></div>
             <div class="timeline-body">
@@ -238,46 +246,6 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card featured" data-reveal>
-            <div class="project-screenshot">
-              <div style="width: 100%; height: 100%; background: var(--surface); display: flex; align-items: center; justify-content: center; gap: 6px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); padding: 20px;">
-                <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
-                  <div style="display: flex; gap: 12px;">
-                    <div style="width: 28px; height: 28px; background: var(--accent); border-radius: 6px; opacity: 0.9;"></div>
-                    <div style="width: 28px; height: 28px; background: var(--accent); border-radius: 6px; opacity: 0.6;"></div>
-                    <div style="width: 28px; height: 28px; background: var(--accent); border-radius: 6px; opacity: 0.7;"></div>
-                  </div>
-                  <div style="display: flex; gap: 4px; margin-top: 4px;">
-                    <div style="width: 20px; height: 2px; background: var(--border-strong);"></div>
-                    <div style="width: 20px; height: 2px; background: var(--accent); opacity: 0.5;"></div>
-                    <div style="width: 20px; height: 2px; background: var(--border-strong);"></div>
-                  </div>
-                  <div style="display: flex; gap: 12px;">
-                    <div style="width: 28px; height: 28px; border: 2px solid var(--accent); border-radius: 6px; opacity: 0.5;"></div>
-                    <div style="width: 28px; height: 28px; background: var(--accent); border-radius: 6px; opacity: 0.8;"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project-body">
-              <div class="project-meta">
-                <h3>Enterprise Multi-Agent Orchestration Platform</h3>
-                <span class="pill pill-current">2026 · Current</span>
-              </div>
-              <div class="tags">
-                <span class="tag">LangGraph</span>
-                <span class="tag">CrewAI</span>
-                <span class="tag">AutoGen</span>
-                <span class="tag">MCP</span>
-                <span class="tag">A2A</span>
-              </div>
-              <p>Multi-agent platform for COBOL/JCL → Java mainframe migration at RBC. Agentic RAG with semantic chunking + hybrid retrieval; <strong>50% faster turnaround</strong>.</p>
-              <div class="project-links">
-                <a href="https://github.com/TheNobody-12" target="_blank">GitHub Repository ↗</a>
-              </div>
-            </div>
-          </article>
-
           <article class="project-card" data-reveal>
             <div class="project-screenshot">
               <div style="width: 100%; height: 100%; background: var(--surface); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm);">
@@ -288,11 +256,11 @@
             </div>
             <div class="project-body">
               <div class="project-meta">
-                <h3>Intelligent Tax Document Extraction</h3>
+                <h3>Intelligent Tax Document Extraction System</h3>
                 <span class="pill">2025</span>
               </div>
               <div class="tags">
-                <span class="tag">Azure Doc Intelligence</span>
+                <span class="tag">Azure Document Intelligence</span>
                 <span class="tag">LLM prompts</span>
                 <span class="tag">HITL</span>
               </div>
@@ -358,6 +326,34 @@
               </div>
             </div>
           </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-screenshot">
+              <div style="width: 100%; height: 100%; background: var(--surface); display: flex; align-items: center; justify-content: center; gap: 8px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm);">
+                <div style="width: 30px; height: 30px; background: var(--accent); border-radius: 50%; opacity: 0.8;"></div>
+                <div style="width: 15px; height: 2px; background: var(--border-strong);"></div>
+                <div style="width: 20px; height: 20px; background: var(--accent); border-radius: 50%; opacity: 0.5;"></div>
+                <div style="width: 15px; height: 2px; background: var(--border-strong);"></div>
+                <div style="width: 25px; height: 25px; background: var(--accent); border-radius: 50%; opacity: 0.6;"></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <h3>Song Recommendation Engine</h3>
+                <span class="pill">Apr – May 2023</span>
+              </div>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">NLTK</span>
+                <span class="tag">ML</span>
+              </div>
+              <p>NLP + topic modeling to personalize music discovery.</p>
+              <div class="project-links">
+                <a href="https://github.com/TheNobody-12" target="_blank">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
         </div>
 
         <div class="section-header archive-header" data-reveal>
@@ -394,7 +390,7 @@
               <h3>Master of Engineering, Computing and Software</h3>
               <span class="pill">Sep 2024 – Apr 2026</span>
             </div>
-            <p class="muted">McMaster University · Hamilton, Ontario, Canada · <strong>GPA 3.8/4.0</strong></p>
+            <p class="muted">McMaster University · Hamilton, Ontario, Canada</p>
           </article>
 
           <article class="card" data-reveal>
@@ -472,35 +468,12 @@
         </div>
         <div class="skills-grid" data-reveal>
           <div class="skill-category">
-            <h3>Agentic AI</h3>
-            <div class="skill-tags">
-              <span>LangGraph</span>
-              <span>LangChain</span>
-              <span>CrewAI</span>
-              <span>AutoGen</span>
-              <span>MCP</span>
-              <span>A2A</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>LLM / GenAI</h3>
-            <div class="skill-tags">
-              <span>RAG</span>
-              <span>Prompt Engineering</span>
-              <span>OpenAI</span>
-              <span>Gemini</span>
-              <span>Claude</span>
-              <span>HuggingFace</span>
-            </div>
-          </div>
-          <div class="skill-category">
             <h3>Languages</h3>
             <div class="skill-tags">
               <span>Python</span>
               <span>Java</span>
-              <span>SQL</span>
               <span>R</span>
-              <span>JavaScript</span>
+              <span>SQL</span>
             </div>
           </div>
           <div class="skill-category">
@@ -514,24 +487,29 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3>Data & Knowledge</h3>
+            <h3>Data</h3>
             <div class="skill-tags">
-              <span>Neo4j</span>
-              <span>PySpark</span>
               <span>Pandas</span>
-              <span>ChromaDB</span>
-              <span>Pinecone</span>
+              <span>NumPy</span>
+              <span>PySpark</span>
+              <span>Neo4j</span>
             </div>
           </div>
           <div class="skill-category">
-            <h3>MLOps & Cloud</h3>
+            <h3>MLOps</h3>
             <div class="skill-tags">
               <span>MLflow</span>
               <span>DVC</span>
               <span>Docker</span>
               <span>Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Cloud</h3>
+            <div class="skill-tags">
               <span>AWS</span>
               <span>Azure</span>
+              <span>GCP</span>
             </div>
           </div>
           <div class="skill-category">
@@ -540,7 +518,7 @@
               <span>FastAPI</span>
               <span>MongoDB</span>
               <span>PostgreSQL</span>
-              <span>Firebase</span>
+              <span>MySQL</span>
             </div>
           </div>
           <div class="skill-category">
@@ -548,9 +526,8 @@
             <div class="skill-tags">
               <span>Git</span>
               <span>Linux</span>
+              <span>Anaconda</span>
               <span>VS Code</span>
-              <span>Cursor</span>
-              <span>Jupyter</span>
             </div>
           </div>
         </div>
@@ -595,28 +572,13 @@
       </div>
     </section>
 
-    <!-- ── 07 Journey ── -->
-    <section id="journey" class="section">
-      <div class="container">
-        <div class="section-header" data-reveal>
-          <span class="section-label">07 / Origin Story</span>
-          <h2>The Builder's Journey</h2>
-        </div>
-        <div class="journey-narrative" data-reveal style="max-width: 800px; line-height: 1.8; font-size: 1.1rem; color: var(--text-secondary);">
-          <p style="margin-bottom: 24px;">My journey into tech began with hardware, building an Arduino-based railway crossing system in high school. This early fascination with making things work evolved into a deep interest in software and algorithms, leading me to place 6th out of 14,000+ participants in the GeeksForGeeks Coding Cup.</p>
-          <p style="margin-bottom: 24px;">I then transitioned into research, publishing work on Computer Vision with the Indian Space Research Organisation (ISRO) and the Semiconductor Laboratory. This foundation allowed me to scale my work into production environments, deploying real-time edge AI models across hundreds of cameras for massive-scale events.</p>
-          <p>Today, while pursuing my Master's at McMaster University, I focus on the cutting edge of enterprise AI. From building mortality forecasting models and knowledge graphs at Manulife, to engineering scalable multi-agent platforms at TCS, my goal is to bridge the gap between advanced research and robust, production-ready data science workflows.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── 08 Writing ── -->
+    <!-- ── 07 Writing ── -->
     <section id="writing" class="section">
       <div class="container">
         <div class="section-header" data-reveal>
           <div class="section-header-row">
             <div>
-              <span class="section-label">08 / Lab notebook</span>
+              <span class="section-label">07 / Lab notebook</span>
               <h2>Latest Writing</h2>
             </div>
             <a class="btn secondary" href="blog/index.html">View all posts</a>
@@ -632,7 +594,7 @@
     <section id="contact" class="section">
       <div class="container">
         <div class="section-header" data-reveal>
-          <span class="section-label">09 / Contact</span>
+          <span class="section-label">08 / Contact</span>
           <h2>Let's build something</h2>
         </div>
         <div class="card contact-card" data-reveal>
