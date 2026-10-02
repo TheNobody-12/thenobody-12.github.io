@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="110" fill="#0f172a"/>
+  <!-- Decorative Grid/Tech Pattern in background -->
+  <path d="M0 256 L512 256 M256 0 L256 512" stroke="#1e293b" stroke-width="20" stroke-dasharray="20 40" />
+  
+  <text x="256" y="275" font-family="-apple-system, system-ui, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="220" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" letter-spacing="-10">SK</text>
+  
+  <!-- Accent Dot (AI/Data concept) -->
+  <circle cx="390" cy="380" r="24" fill="#0ea5e9" />
+</svg>
