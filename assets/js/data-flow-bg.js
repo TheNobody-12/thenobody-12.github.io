@@ -42,6 +42,7 @@
   let particles = [];
   let meteors = [];
   let planes = [];
+  let huds = [];
 
   class Particle {
     constructor() {
@@ -180,14 +181,65 @@
     }
   }
 
+  class IronManHUD {
+    constructor() {
+      this.x = width * (0.7 + Math.random() * 0.2);
+      this.y = height * (0.3 + Math.random() * 0.4);
+      this.angle = 0;
+      this.scale = 0.8 + Math.random() * 0.4;
+      this.alpha = 0.08;
+      this.spinSpeed = 0.005 + Math.random() * 0.005;
+    }
+    update() {
+      this.angle += this.spinSpeed;
+      // Slight drift
+      this.x += Math.sin(this.angle * 2) * 0.1;
+      this.y += Math.cos(this.angle * 2) * 0.1;
+    }
+    draw() {
+      ctx.save();
+      ctx.translate(this.x, this.y);
+      ctx.rotate(this.angle);
+      ctx.scale(this.scale, this.scale);
+      
+      ctx.globalAlpha = this.alpha;
+      ctx.strokeStyle = '#0ea5e9'; // JARVIS Blue
+      ctx.lineWidth = 1;
+
+      // Outer dashed ring
+      ctx.setLineDash([10, 5, 2, 5]);
+      ctx.beginPath();
+      ctx.arc(0, 0, 50, 0, Math.PI * 2);
+      ctx.stroke();
+
+      // Inner solid ring
+      ctx.setLineDash([]);
+      ctx.beginPath();
+      ctx.arc(0, 0, 35, 0, Math.PI * 2);
+      ctx.stroke();
+
+      // Crosshairs
+      ctx.beginPath();
+      ctx.moveTo(-60, 0); ctx.lineTo(-40, 0);
+      ctx.moveTo(60, 0); ctx.lineTo(40, 0);
+      ctx.moveTo(0, -60); ctx.lineTo(0, -40);
+      ctx.moveTo(0, 60); ctx.lineTo(0, 40);
+      ctx.stroke();
+
+      ctx.restore();
+    }
+  }
+
   function init() {
     let targetCount = width < 600 ? 20 : 40;
     particles = [];
     meteors = [];
     planes = [];
+    huds = [];
     for (let i = 0; i < targetCount; i++) particles.push(new Particle());
     for (let i = 0; i < 4; i++) meteors.push(new Meteor());
     for (let i = 0; i < 2; i++) planes.push(new PaperPlane());
+    huds.push(new IronManHUD());
   }
 
   function animate() {
@@ -203,6 +255,7 @@
     particles.forEach(p => { p.update(); p.draw(); });
     meteors.forEach(m => { m.update(); m.draw(); });
     planes.forEach(p => { p.update(); p.draw(); });
+    huds.forEach(h => { h.update(); h.draw(); });
   }
 
   window.addEventListener('resize', () => {
@@ -227,4 +280,17 @@
 
   init();
   animate();
+  
+  // ---- Hero Parallax Mapping ----
+  const heroBg = document.querySelector('.hero-bg');
+  window.addEventListener('scroll', () => {
+    if (prefersReducedMotion) return;
+    const scrollY = window.scrollY;
+    if (scrollY < height) {
+      if (heroBg) {
+        heroBg.style.transform = `translateY(${scrollY * 0.35}px)`;
+      }
+      canvas.style.transform = `translateY(${scrollY * 0.15}px)`;
+    }
+  });
 })();

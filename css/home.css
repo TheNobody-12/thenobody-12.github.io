@@ -69,7 +69,7 @@
   align-items: center;
   gap: 8px;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 0.5px solid var(--border);
   padding: 6px 16px;
   border-radius: 100px;
   font-family: var(--font-mono);
@@ -193,7 +193,7 @@
 body.home-page footer {
   position: relative;
   z-index: 1;
-  background: rgba(253, 250, 247, 0.85);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -206,7 +206,7 @@ body.home-page footer {
 
 .qnav-card {
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 0.5px solid var(--border);
   border-radius: var(--radius);
   padding: 24px 22px;
   display: flex;
